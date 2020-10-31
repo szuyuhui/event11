@@ -32,10 +32,21 @@
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> -->
-  <link href="assets/css/navlight.css" rel="stylesheet" type="text/css">
+  <!-- <link href="assets/css/navlight.css" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="assets/css/main_style.css">
 
-  
+  <script>
+    $(function() {
+      // *only* if we have anchor on the url
+      if(window.location.hash) {
+      // smooth scroll to the anchor id
+      $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top + 100 
+      }, 800, 'swing');
+      }
+
+    });
+  </script>
 
 </head>
 
@@ -951,7 +962,7 @@
               <div class="setList">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559282" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_05.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_04.jpg" class="pic">
                   </b>
                   <h3>不老紅霜★密集抗老</h3>
                   <h4>到手23折↘不老神霜抗老安瓶6入</h4>
@@ -2303,7 +2314,6 @@
   </div><!-- WRAPPER END -->
 
 
-
   <!--Phone-選單套件-->
   <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
   <script language="javascript" type="text/javascript" src="assets/js/navlight_main.js"></script>
@@ -2312,21 +2322,13 @@
   <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script> -->
 
   <script>
-    $(function(){
-
-      // if (window.location.hash.indexOf('#') >= 0) {
-      // $('html,body').animate({
-      // scrollTop: ($(window.location.hash).offset().top - 50)   "px"
-      // },
-      // 300);
-      if(location.hash){
-        var target = $(location.hash);
-        if(target.length==1){
-          var top = target.offset().top-50;
-          if(top > 0){
-            $('html,body').animate({scrollTop:($(window.location.hash).offset().top - 50)"px"},0);
-          }
-        }
+    $(function() {
+      // *only* if we have anchor on the url
+      if(window.location.hash) {
+      // smooth scroll to the anchor id
+      $('html, body').animate({
+          scrollTop: $(window.location.hash).offset().top + 20
+      }, 800, 'swing');
       }
     });
   </script>
