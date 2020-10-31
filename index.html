@@ -2297,6 +2297,37 @@
 
   </div><!-- WRAPPER END -->
 
+  <script>
+    
+    // jQuery(document).ready(function(e) {
+    //   $(window).hashchange(function(){
+    //     var target = $(location.hash);
+    //     if(target.length==1){
+    //       var top =target.offset().top-100;
+    //       if(top>0){
+    //         $('html,body').animate({scrollTop:top},800);
+    //       }
+    //     }
+    //   });
+    //   $(window).hashchange();
+    // })
+
+    $(function() {
+      // *only* if we have anchor on the url
+      if(window.location.hash) {
+      // smooth scroll to the anchor id
+      $('html, body').animate({
+<<<<<<< HEAD
+          scrollTop: $(window.location.hash).offset().top - 100 
+      }, 800, 'swing');
+=======
+          scrollTop: ($(window.location.hash).offset().top - 100)},0);
+>>>>>>> parent of e14f4a7... ADFASDFASDF
+      }
+    });
+    
+  </script>
+
 
   <!--Phone-選單套件-->
   <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
@@ -2305,19 +2336,6 @@
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script> -->
 
-  <script>
-
-    $(function() {
-      // *only* if we have anchor on the url
-      if(window.location.hash) {
-      // smooth scroll to the anchor id
-      $('html, body').animate({
-          scrollTop: $(window.location.hash).offset().top - 100 
-      }, 800, 'swing');
-      }
-    });
-    
-  </script>
 
 
   <script type="text/javascript">
