@@ -35,6 +35,7 @@
   <link href="assets/css/navlight.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="assets/css/main_style.css">
 
+  
 
 </head>
 
@@ -2310,7 +2311,20 @@
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script> -->
 
-  
+  <script>
+    $(function(){
+
+      if(location.hash){
+        var target = $(location.hash);
+        if(target.length==1){
+          var top = target.offset().top-50;
+          if(top > 0){
+            $('html,body').animatie({scrollTop(top)},800)
+          }
+        }
+      }
+    });
+  </script>
 
   <script type="text/javascript">
     // var spDone1 = true;
