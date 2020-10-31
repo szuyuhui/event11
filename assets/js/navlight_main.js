@@ -17,7 +17,7 @@ $(window).load(function(){
 	$WRAPPER.navLight({
 		navarea: '.NavArea_tabbar',        //最大包Class。預設.NavArea
 		//content: '.js-navlight_content',  //選單對應內容區塊Class。預設.js-navlight_content
-    top_i: 15,                        //錨點偏移
+    top_i: 60,                        //錨點偏移，預設15
     
 		//開關
 		open_light: true,                 //啟動--高亮對應區塊。
