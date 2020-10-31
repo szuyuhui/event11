@@ -35,7 +35,7 @@ $(window).load(function(){
 		navs: '.box',                     //區塊Class。預設.Nav
 		//nav_wrapper: '.fixedBox_1',      //內容包Class。預設.Nav-wrapper
 		content: '.js-PC',  //選單對應內容區塊Class。預設.js-navlight_content
-		//top_i: 15,                        //錨點偏移
+		top_i: 15,                        //錨點偏移
 		
 		//開關
 		open_light: true,                 //啟動--高亮對應區塊。

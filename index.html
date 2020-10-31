@@ -35,19 +35,6 @@
   <!-- <link href="assets/css/navlight.css" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="assets/css/main_style.css">
 
-  <script>
-    $(function() {
-      // *only* if we have anchor on the url
-      if(window.location.hash) {
-      // smooth scroll to the anchor id
-      $('html, body').animate({
-          scrollTop: $(window.location.hash).offset().top + 100 }, 0);
-      };
-      console.log($(window.location.hash).offset().top)
-
-    });
-  </script>
-
 </head>
 
 <body>
@@ -2282,7 +2269,7 @@
                 </p>
               </a>
             </div>
-			 <div class="setList">
+			      <div class="setList">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559590" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_23.jpg" class="pic">
@@ -2295,9 +2282,6 @@
                 </p>
               </a>
             </div>  
-			  
-			  
-			  
           </div> 
         </div><!--lineWrap-->
       </div>
@@ -2313,6 +2297,22 @@
 
   </div><!-- WRAPPER END -->
 
+  <script>
+    
+    jQuery(document).ready(function(e) {
+      $(window).hashchange(function(){
+        var target = $(location.hash);
+        if(target.length==1){
+          var top =target.offset().top-100;
+          if(top>0){
+            $('html,body').animate({scrollTop:top},800);
+          }
+        }
+      });
+    })
+    
+  </script>
+
 
   <!--Phone-選單套件-->
   <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
@@ -2321,17 +2321,7 @@
   <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script> -->
 
-  <script>
-    $(function() {
-      // *only* if we have anchor on the url
-      if(window.location.hash) {
-      // smooth scroll to the anchor id
-      $('html, body').animate({
-          scrollTop: $(window.location.hash).offset().top + 20
-      }, 800, 'swing');
-      }
-    });
-  </script>
+
 
   <script type="text/javascript">
     // var spDone1 = true;
