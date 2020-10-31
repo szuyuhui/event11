@@ -37,16 +37,26 @@
 
   <script>
     $(function(){
-      $(window).hashchange(function(){
+      // $(window).hashchange(function(){
+      //   var target = $(location.hash);
+      //   if(target.length == 1){
+      //     var top = target.offset().top-50;
+      //     if(top>0){
+      //       $('html,body').animate({scrollTop:top},0);
+      //     }
+      //   }
+      // });
+      // $(window).hashchange();
+
+      if(location.hash){
         var target = $(location.hash);
-        if(target.length == 1){
+        if(target.length==1){
           var top = target.offset().top-50;
-          if(top>0){
-            $('html,body').animate({scrollTop:top},0);
+          if(top > 0){
+            $('html,body').animatie({scrollTop(top)},800)
           }
         }
-      });
-      $(window).hashchange();
+      }
     });
   </script>
 
@@ -964,7 +974,7 @@
               <div class="setList">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559282" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_04.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_05.jpg" class="pic">
                   </b>
                   <h3>不老紅霜★密集抗老</h3>
                   <h4>到手23折↘不老神霜抗老安瓶6入</h4>
