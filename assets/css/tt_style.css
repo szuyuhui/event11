@@ -1679,7 +1679,7 @@ footer {
 }
 
 .eventCountdown .countdown_title {
-  font-size: 3.75em;
+  font-size: 3.4375em;
   line-height: 1.3;
   padding-top: 0.266em;
   padding-bottom: 0.266em;
@@ -1995,6 +1995,16 @@ footer {
   }
 }
 
+.millionCart_v1 {
+  padding-bottom: 55px;
+}
+
+@media (max-width: 480px) {
+  .millionCart_v1 {
+    padding-bottom: 25px;
+  }
+}
+
 .specialPoints h2 {
   display: none;
 }
@@ -2143,9 +2153,9 @@ footer {
 }
 
 .onlyToday .countdown_title .title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: .9;
+      -ms-flex: .9;
+          flex: .9;
   text-align: right;
 }
 
@@ -2157,6 +2167,10 @@ footer {
 
 .onlyToday .countdown_title .countDownTimer .days, .onlyToday .countdown_title .countDownTimer .hours, .onlyToday .countdown_title .countDownTimer .minutes, .onlyToday .countdown_title .countDownTimer .seconds {
   color: #fde5b5;
+}
+
+.onlyToday .countdown_title .countDownTimer .txt {
+  font-size: 0.7em;
 }
 
 @media (max-width: 1199px) {
@@ -2181,6 +2195,12 @@ footer {
   }
   .onlyToday .countdown_title .countDownTimer .days, .onlyToday .countdown_title .countDownTimer .hours, .onlyToday .countdown_title .countDownTimer .minutes, .onlyToday .countdown_title .countDownTimer .seconds {
     color: #fde5b5;
+  }
+}
+
+@media (max-width: 1199px) {
+  .onlyToday .countdown_title .countDownTimer {
+    font-size: 0.8em;
   }
 }
 

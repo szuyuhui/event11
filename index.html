@@ -26,7 +26,8 @@
 
   <!-- J S -->
   <script language="javascript" type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
+  <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script>
+  
   <!-- C S S -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" />
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
@@ -123,12 +124,13 @@
 
     <!--主視覺-->
     <section id="KV" class="head_Kv">
+      <div id="confetti" class="confetiiBox"></div>
       <div class="containter-1200">
         <div class="header-title">
           <article></article>
           <div class="header-cta">
             <!-- 第二檔＋ part2-->
-            <b class="part2"></b>
+            <b class=""></b>
           </div>
         </div>
       </div>
@@ -139,10 +141,10 @@
       <div class="container-1200">
 
         <div class="countdown_title">
-          <div>雙11活動倒數</div>
-          <div class="countDownTimer timerA">
+          <div class="cdtitle">雙11活動</div>
+          <div class="countDownTimer timerB">
             <div class="contain d-flex-around">
-              <!-- <div class="txt d-flex-center">倒數</div> -->
+              <div class="txt d-flex-center">倒數</div>
               <div class="time d-flex-around">
                 <div class="days">00</div>
                 <div class="colon">天</div>
@@ -157,7 +159,8 @@
           </div>
         </div>
         <ul class="countDownDays">
-          <li class="dayList day1 day_on"></li>
+          <!-- day_on -->
+          <li class="dayList day1"></li>
           <li class="dayList day2"></li>
           <li class="dayList day3"></li>
         </ul>
@@ -342,7 +345,7 @@
           <div class="spPoint_opt">
             <ul>
               <li class="checkin"><a href="https://www.naruko.com.tw/shop/promo/20120426-body-maintenance-sinica/" target="_blank"></a></li>
-              <li class="discript"><a href="#" target="_blank"></a></li>
+              <li class="discript"><a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#ASS" target="_blank"></a></li>
             </ul>
           </div>
         </div>
@@ -386,9 +389,10 @@
     <section id="LIVE" class="liveWrap">
       <div class="container-1200">
           <ul class="js-PC js-navlight_content">
+            <!-- 預告：pre / 直播中：on / 直播結束：unavailable -->
             <li class="day1 pre"><a href="#" target="_blank"></a></li>
-            <li class="day2 on"><a href="#" target="_blank"></a></li>
-            <li class="day3 unavailable"><a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#11D" target="_blank"></a></li>
+            <li class="day2 pre"><a href="#" target="_blank"></a></li>
+            <li class="day3 pre"><a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#11D" target="_blank"></a></li>
           </ul> 
       </div>
     </section>
@@ -407,14 +411,14 @@
               <img src="assets/img_main/title_crazyOnedollor_m.png" alt="$1瘋搶 1111倍最狂回饋">
             </span>
           </div>
-          <i>11/7-12 每日12點準時開搶 <a href="#">活動說明</a> </i>
+          <i>11/7-12 每日12點準時開搶 <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#11D" target="_blank">活動說明</a> </i>
         </h1>
 
         <div class="wrapSet--2--2" id="1D">
           <!-- 狀態加在 setList 後面-->
           <!--- pre :預售中 / on :熱賣中 /  soldout :售完 -->
           <!-- 11/7 -->
-          <div class="setList pre">
+          <div class="setList d1 pre">
             <a href="#" target="_blank" class="preimgD1">
               <img src="assets/img_main/onedollor_day1_pre.png" alt="美白寶">
             </a>
@@ -427,7 +431,7 @@
           </div>
 
           <!-- 11/8 -->
-          <div class="setList pre">
+          <div class="setList d2 pre">
             <a href="#" target="_blank" class="preimgD2">
               <img src="assets/img_main/onedollor_day2_pre.png" alt="粉刺寶">
             </a>
@@ -441,7 +445,7 @@
         </div>
         <div class="wrapSet--2--2" id="1Da">
           <!-- 11/9 -->
-          <div class="setList pre">
+          <div class="setList d3 pre">
             <a href="#" target="_blank" class="preimgD3">
               <img src="assets/img_main/onedollor_day3_pre.png" alt="美白晶露">
             </a>
@@ -454,7 +458,7 @@
           </div>
 
           <!-- 11/10 -->
-          <div class="setList pre">
+          <div class="setList d4 pre">
             <a href="#" target="_blank" class="preimgD4">
               <img src="assets/img_main/onedollor_day4_pre.png" alt="抗老安平">
             </a>
@@ -468,7 +472,7 @@
         </div>
         <div class="wrapSet--2--2" id="1Db">
           <!-- 11/11 -->
-          <div class="setList pre">
+          <div class="setList d5 pre">
             <a href="#" target="_blank" class="preimgD5">
               <img src="assets/img_main/onedollor_day5_pre.png" alt="美白安平">
             </a>
@@ -481,7 +485,7 @@
           </div>
 
           <!-- 11/12 -->
-          <div class="setList pre">
+          <div class="setList d6 pre">
             <a href="#" target="_blank" class="preimgD6">
               <img src="assets/img_main/onedollor_day6_pre.png" alt="精華油">
             </a>
@@ -507,10 +511,12 @@
             <div class="title">
               <img src="assets/image/title_onlyToday.jpg" alt="24hr限定秒殺組">
             </div>
-            <div class="countDownTimer timerA">
+            <div class="countDownTimer timerB">
               <div class="contain d-flex-around">
                 <div class="txt d-flex-center">倒數</div>
                 <div class="time d-flex-around">
+                  <!-- <div class="days">00</div>
+                  <div class="colon">天</div> -->
                   <div class="hours">00</div>
                   <div class="colon">時</div>
                   <div class="minutes">00</div>
@@ -914,15 +920,15 @@
           <div class="yellowLine">
 
               <!--兩個一排-->
-            <div class="wrapSet--2--1" id="JC1">
-              <div class="setList">
+            <div class="wrapSet--2--1">
+              <div class="setList" id="JC1">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559270" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/574x226_01.jpg" alt="">
                   </b>
                 </a>
               </div>
-              <div class="setList">
+              <div class="setList" id="JC1a">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559274" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/574x226_02.jpg" alt="">
@@ -959,7 +965,7 @@
                   </p>
                 </a>
               </div>
-              <div class="setList">
+              <div class="setList" id="JC2a">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559286" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/prod/JC_500x500_05.jpg" class="pic">
@@ -1026,7 +1032,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC3a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559302" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_09.jpg" class="pic">
@@ -1072,7 +1078,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC4a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559314" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/574x226_04.jpg" alt="">
@@ -1088,7 +1094,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC5a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559322" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/574x226_06.jpg" alt="">
@@ -1124,7 +1130,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC6a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559334" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_17.jpg" class="pic">
@@ -1179,7 +1185,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC7a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559350" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_21.jpg" class="pic">
@@ -1234,7 +1240,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC8a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559366" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_25.jpg" class="pic">
@@ -1274,24 +1280,24 @@
          <!--兩個一排-->
           <div class="wrapSet--2--1" id="JC9">
             <div class="setList">
-              <a href="#" target="_blank">
+              <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#JCP" target="_blank">
                 <img src="assets/img_main/prod/jc_banner_1.jpg" alt="">
               </a>
             </div>
-            <div class="setList">
-              <a href="#" target="_blank">
+            <div class="setList" id="JC9a">
+              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=574" target="_blank">
                 <img src="assets/img_main/prod/jc_banner_2.jpg" alt="">
               </a>
             </div>
           </div>
           <div class="wrapSet--2--1" id="JC10">
             <div class="setList">
-              <a href="#" target="_blank">
+              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=797" target="_blank">
                 <img src="assets/img_main/prod/jc_banner_3.jpg" alt="">
               </a>
             </div>
-            <div class="setList">
-              <a href="#" target="_blank">
+            <div class="setList" id="JC10a">
+              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=544" target="_blank">
                 <img src="assets/img_main/prod/jc_banner_4.jpg" alt="">
               </a>
             </div>
@@ -1333,7 +1339,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC11a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559246" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_29.jpg" class="pic">
@@ -1388,7 +1394,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="JC12a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559262" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/JC_500x500_33.jpg" class="pic">
@@ -1446,7 +1452,7 @@
                   </b>
                 </a>
               </div>
-              <div class="setList">
+              <div class="setList" id="NA1a">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559438" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/NA_574x226_04.jpg" alt="">
@@ -1483,7 +1489,7 @@
                   </p>
                 </a>
               </div>
-              <div class="setList">
+              <div class="setList" id="NA2a">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559414" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/prod/NA_500x500_07.jpg" class="pic">
@@ -1538,7 +1544,7 @@
                   </p>
                 </a>
               </div>
-              <div class="setList">
+              <div class="setList" id="NA3a">
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559418" target="_blank">
                   <b class="lineMoney30">
                     <img src="assets/img_main/prod/NA_500x500_11.jpg" class="pic">
@@ -1611,7 +1617,7 @@
                 <img src="assets/img_main/prod/na_banner_1.jpg" alt="任4入5折 茶樹抗痘系列〉">
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA5a">
               <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=1241" target="_blank">
                 <img src="assets/img_main/prod/na_banner_2.jpg" alt="任4入5折 紅薏仁森玫瑰系列〉">
               </a>
@@ -1653,7 +1659,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA7a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559518" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/NA_574x226_08.jpg" alt="">
@@ -1691,7 +1697,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA8a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559506" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/NA_500x500_19.jpg" class="pic">
@@ -1755,7 +1761,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA9a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559454" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/NA_500x500_23.jpg" class="pic">
@@ -1802,7 +1808,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA10a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559466" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/NA_574x226_10.jpg" alt="">
@@ -1840,7 +1846,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA11a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559474" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/NA_500x500_29.jpg" class="pic">
@@ -1895,7 +1901,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA12a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559394" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/NA_500x500_33.jpg" class="pic">
@@ -1923,7 +1929,7 @@
             </div>
           </div>
           <!--分隔線-->
-          <div class="wrapSet--4--2" id="NA13">            
+          <div class="wrapSet--4--2" id="NA13">
             <div class="setList">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559486" target="_blank">
                 <b class="lineMoney30">
@@ -1950,7 +1956,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA13a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559462" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/NA_500x500_37.jpg" class="pic">
@@ -1994,7 +2000,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP1a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559546" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/AP_574x226_02.jpg" alt="">
@@ -2010,7 +2016,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP2a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559562" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/AP_574x226_04.jpg" alt="">
@@ -2047,7 +2053,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP3a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559574" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_07.jpg" class="pic">
@@ -2101,7 +2107,7 @@
                 </p>
               </a>
             </div>
-           <div class="setList">
+           <div class="setList" id="AP4a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559554" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_11.jpg" class="pic">
@@ -2148,7 +2154,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP5a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559526" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/AP_574x226_06.jpg" alt="">
@@ -2184,7 +2190,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP6a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559538" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_17.jpg" class="pic">
@@ -2210,8 +2216,8 @@
         </h1>
 
         <div class="lineWrap">
-		 <!--兩個一排-->
-          <div class="wrapSet--2--1" id="AP5">
+		     <!--兩個一排-->
+          <!-- <div class="wrapSet--2--1" id="AP5">
             <div class="setList">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559606" target="_blank">
                 <b class="lineMoney30">
@@ -2226,7 +2232,7 @@
                 </b>
               </a>
             </div>
-          </div>	
+          </div>	 -->
           <!--四個一排-->
           <div class="wrapSet--4--2" id="AP7">
 		
@@ -2256,7 +2262,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP7a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559594" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_22.jpg" class="pic">
@@ -2297,53 +2303,388 @@
 
   </div><!-- WRAPPER END -->
 
+
+  <!--Phone-選單套件-->
+  <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
+  <script language="javascript" type="text/javascript" src="assets/js/navlight_main.js"></script>
+  <script language="javascript" type="text/javascript" src='assets/js/main.js'></script>
+  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
+
   <script>
-    
-    // jQuery(document).ready(function(e) {
-    //   $(window).hashchange(function(){
-    //     var target = $(location.hash);
-    //     if(target.length==1){
-    //       var top =target.offset().top-100;
-    //       if(top>0){
-    //         $('html,body').animate({scrollTop:top},800);
-    //       }
-    //     }
-    //   });
-    //   $(window).hashchange();
-    // })
 
     $(function() {
       // *only* if we have anchor on the url
       if(window.location.hash) {
       // smooth scroll to the anchor id
       $('html, body').animate({
-<<<<<<< HEAD
-          scrollTop: $(window.location.hash).offset().top - 100 
-      }, 800, 'swing');
-=======
-          scrollTop: ($(window.location.hash).offset().top - 100)},0);
->>>>>>> parent of e14f4a7... ADFASDFASDF
+          scrollTop: $(window.location.hash).offset().top - 140 
+        }, 800, 'swing');
       }
     });
     
   </script>
 
 
-  <!--Phone-選單套件-->
-  <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
-  <script language="javascript" type="text/javascript" src="assets/js/navlight_main.js"></script>
-  <script language="javascript" type="text/javascript" src='assets/js/main.js'></script>
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script language="javascript" type="text/javascript" src="assets/js/global_t.js"></script> -->
-
-
-
   <script type="text/javascript">
-    // var spDone1 = true;
-    // var spDone2 = true;
-    // var spDone3 = true;
-    // var spDone4 = true;
+    var spDone1 = true;
+    var spDone2 = true;
+    var spDone3 = true;
+    var spDone4 = true;
   </script>
+
+
+
+
+<script>
+$(document).ready(function() {
+    var frameRate = 30;
+    var dt = 1.0 / frameRate;
+    var DEG_TO_RAD = Math.PI / 180;
+    var RAD_TO_DEG = 180 / Math.PI;
+    var colors = [
+        ["#701419", "#87282d"],
+        ["#fce6b7", "#0c9640"],
+        ["#9c713a", "#eac900"],
+        ["#2c3951", "#98631e"]
+    ];
+
+    function Vector2(_x, _y) {
+        this.x = _x, this.y = _y;
+        this.Length = function() {
+            return Math.sqrt(this.SqrLength());
+        }
+        this.SqrLength = function() {
+            return this.x * this.x + this.y * this.y;
+        }
+        this.Equals = function(_vec0, _vec1) {
+            return _vec0.x == _vec1.x && _vec0.y == _vec1.y;
+        }
+        this.Add = function(_vec) {
+            this.x += _vec.x;
+            this.y += _vec.y;
+        }
+        this.Sub = function(_vec) {
+            this.x -= _vec.x;
+            this.y -= _vec.y;
+        }
+        this.Div = function(_f) {
+            this.x /= _f;
+            this.y /= _f;
+        }
+        this.Mul = function(_f) {
+            this.x *= _f;
+            this.y *= _f;
+        }
+        this.Normalize = function() {
+            var sqrLen = this.SqrLength();
+            if (sqrLen != 0) {
+                var factor = 1.0 / Math.sqrt(sqrLen);
+                this.x *= factor;
+                this.y *= factor;
+            }
+        }
+        this.Normalized = function() {
+            var sqrLen = this.SqrLength();
+            if (sqrLen != 0) {
+                var factor = 1.0 / Math.sqrt(sqrLen);
+                return new Vector2(this.x * factor, this.y * factor);
+            }
+            return new Vector2(0, 0);
+        }
+    }
+    Vector2.Lerp = function(_vec0, _vec1, _t) {
+        return new Vector2((_vec1.x - _vec0.x) * _t + _vec0.x, (_vec1.y - _vec0.y) * _t + _vec0.y);
+    }
+    Vector2.Distance = function(_vec0, _vec1) {
+        return Math.sqrt(Vector2.SqrDistance(_vec0, _vec1));
+    }
+    Vector2.SqrDistance = function(_vec0, _vec1) {
+        var x = _vec0.x - _vec1.x;
+        var y = _vec0.y - _vec1.y;
+        return (x * x + y * y + z * z);
+    }
+    Vector2.Scale = function(_vec0, _vec1) {
+        return new Vector2(_vec0.x * _vec1.x, _vec0.y * _vec1.y);
+    }
+    Vector2.Min = function(_vec0, _vec1) {
+        return new Vector2(Math.min(_vec0.x, _vec1.x), Math.min(_vec0.y, _vec1.y));
+    }
+    Vector2.Max = function(_vec0, _vec1) {
+        return new Vector2(Math.max(_vec0.x, _vec1.x), Math.max(_vec0.y, _vec1.y));
+    }
+    Vector2.ClampMagnitude = function(_vec0, _len) {
+        var vecNorm = _vec0.Normalized;
+        return new Vector2(vecNorm.x * _len, vecNorm.y * _len);
+    }
+    Vector2.Sub = function(_vec0, _vec1) {
+        return new Vector2(_vec0.x - _vec1.x, _vec0.y - _vec1.y, _vec0.z - _vec1.z);
+    }
+
+    function EulerMass(_x, _y, _mass, _drag) {
+        this.position = new Vector2(_x, _y);
+        this.mass = _mass;
+        this.drag = _drag;
+        this.force = new Vector2(0, 0);
+        this.velocity = new Vector2(0, 0);
+        this.AddForce = function(_f) {
+            this.force.Add(_f);
+        }
+        this.Integrate = function(_dt) {
+            var acc = this.CurrentForce(this.position);
+            acc.Div(this.mass);
+            var posDelta = new Vector2(this.velocity.x, this.velocity.y);
+            posDelta.Mul(_dt);
+            this.position.Add(posDelta);
+            acc.Mul(_dt);
+            this.velocity.Add(acc);
+            this.force = new Vector2(0, 0);
+        }
+        this.CurrentForce = function(_pos, _vel) {
+            var totalForce = new Vector2(this.force.x, this.force.y);
+            var speed = this.velocity.Length();
+            var dragVel = new Vector2(this.velocity.x, this.velocity.y);
+            dragVel.Mul(this.drag * this.mass * speed);
+            totalForce.Sub(dragVel);
+            return totalForce;
+        }
+    }
+
+    function ConfettiPaper(_x, _y) {
+        this.pos = new Vector2(_x, _y);
+        this.rotationSpeed = Math.random() * 600 + 800;
+        this.angle = DEG_TO_RAD * Math.random() * 360;
+        this.rotation = DEG_TO_RAD * Math.random() * 360;
+        this.cosA = 1.0;
+        this.size = 5.0;
+        this.oscillationSpeed = Math.random() * 1.5 + 0.5;
+        this.xSpeed = 40.0;
+        this.ySpeed = Math.random() * 60 + 50.0;
+        this.corners = new Array();
+        this.time = Math.random();
+        var ci = Math.round(Math.random() * (colors.length - 1));
+        this.frontColor = colors[ci][0];
+        this.backColor = colors[ci][1];
+        for (var i = 0; i < 4; i++) {
+            var dx = Math.cos(this.angle + DEG_TO_RAD * (i * 90 + 45));
+            var dy = Math.sin(this.angle + DEG_TO_RAD * (i * 90 + 45));
+            this.corners[i] = new Vector2(dx, dy);
+        }
+        this.Update = function(_dt) {
+            this.time += _dt;
+            this.rotation += this.rotationSpeed * _dt;
+            this.cosA = Math.cos(DEG_TO_RAD * this.rotation);
+            this.pos.x += Math.cos(this.time * this.oscillationSpeed) * this.xSpeed * _dt
+            this.pos.y += this.ySpeed * _dt;
+            if (this.pos.y > ConfettiPaper.bounds.y) {
+                this.pos.x = Math.random() * ConfettiPaper.bounds.x;
+                this.pos.y = 0;
+            }
+        }
+        this.Draw = function(_g) {
+            if (this.cosA > 0) {
+                _g.fillStyle = this.frontColor;
+            } else {
+                _g.fillStyle = this.backColor;
+            }
+            _g.beginPath();
+            _g.moveTo(this.pos.x + this.corners[0].x * this.size, this.pos.y + this.corners[0].y * this.size * this.cosA);
+            for (var i = 1; i < 4; i++) {
+                _g.lineTo(this.pos.x + this.corners[i].x * this.size, this.pos.y + this.corners[i].y * this.size * this.cosA);
+            }
+            _g.closePath();
+            _g.fill();
+        }
+    }
+    ConfettiPaper.bounds = new Vector2(0, 0);
+
+    function ConfettiRibbon(_x, _y, _count, _dist, _thickness, _angle, _mass, _drag) {
+        this.particleDist = _dist;
+        this.particleCount = _count;
+        this.particleMass = _mass;
+        this.particleDrag = _drag;
+        this.particles = new Array();
+        var ci = Math.round(Math.random() * (colors.length - 1));
+        this.frontColor = colors[ci][0];
+        this.backColor = colors[ci][1];
+        this.xOff = Math.cos(DEG_TO_RAD * _angle) * _thickness;
+        this.yOff = Math.sin(DEG_TO_RAD * _angle) * _thickness;
+        this.position = new Vector2(_x, _y);
+        this.prevPosition = new Vector2(_x, _y);
+        this.velocityInherit = Math.random() * 2 + 4;
+        this.time = Math.random() * 100;
+        this.oscillationSpeed = Math.random() * 2 + 2;
+        this.oscillationDistance = Math.random() * 40 + 40;
+        this.ySpeed = Math.random() * 40 + 80;
+        for (var i = 0; i < this.particleCount; i++) {
+            this.particles[i] = new EulerMass(_x, _y - i * this.particleDist, this.particleMass, this.particleDrag);
+        }
+        this.Update = function(_dt) {
+            var i = 0;
+            this.time += _dt * this.oscillationSpeed;
+            this.position.y += this.ySpeed * _dt;
+            this.position.x += Math.cos(this.time) * this.oscillationDistance * _dt;
+            this.particles[0].position = this.position;
+            var dX = this.prevPosition.x - this.position.x;
+            var dY = this.prevPosition.y - this.position.y;
+            var delta = Math.sqrt(dX * dX + dY * dY);
+            this.prevPosition = new Vector2(this.position.x, this.position.y);
+            for (i = 1; i < this.particleCount; i++) {
+                var dirP = Vector2.Sub(this.particles[i - 1].position, this.particles[i].position);
+                dirP.Normalize();
+                dirP.Mul((delta / _dt) * this.velocityInherit);
+                this.particles[i].AddForce(dirP);
+            }
+            for (i = 1; i < this.particleCount; i++) {
+                this.particles[i].Integrate(_dt);
+            }
+            for (i = 1; i < this.particleCount; i++) {
+                var rp2 = new Vector2(this.particles[i].position.x, this.particles[i].position.y);
+                rp2.Sub(this.particles[i - 1].position);
+                rp2.Normalize();
+                rp2.Mul(this.particleDist);
+                rp2.Add(this.particles[i - 1].position);
+                this.particles[i].position = rp2;
+            }
+            if (this.position.y > ConfettiRibbon.bounds.y + this.particleDist * this.particleCount) {
+                this.Reset();
+            }
+        }
+        this.Reset = function() {
+            this.position.y = -Math.random() * ConfettiRibbon.bounds.y;
+            this.position.x = Math.random() * ConfettiRibbon.bounds.x;
+            this.prevPosition = new Vector2(this.position.x, this.position.y);
+            this.velocityInherit = Math.random() * 2 + 4;
+            this.time = Math.random() * 100;
+            this.oscillationSpeed = Math.random() * 2.0 + 1.5;
+            this.oscillationDistance = Math.random() * 40 + 40;
+            this.ySpeed = Math.random() * 40 + 80;
+            var ci = Math.round(Math.random() * (colors.length - 1));
+            this.frontColor = colors[ci][0];
+            this.backColor = colors[ci][1];
+            this.particles = new Array();
+            for (var i = 0; i < this.particleCount; i++) {
+                this.particles[i] = new EulerMass(this.position.x, this.position.y - i * this.particleDist, this.particleMass, this.particleDrag);
+            }
+        }
+        this.Draw = function(_g) {
+            for (var i = 0; i < this.particleCount - 1; i++) {
+                var p0 = new Vector2(this.particles[i].position.x + this.xOff, this.particles[i].position.y + this.yOff);
+                var p1 = new Vector2(this.particles[i + 1].position.x + this.xOff, this.particles[i + 1].position.y + this.yOff);
+                if (this.Side(this.particles[i].position.x, this.particles[i].position.y, this.particles[i + 1].position.x, this.particles[i + 1].position.y, p1.x, p1.y) < 0) {
+                    _g.fillStyle = this.frontColor;
+                    _g.strokeStyle = this.frontColor;
+                } else {
+                    _g.fillStyle = this.backColor;
+                    _g.strokeStyle = this.backColor;
+                }
+                if (i == 0) {
+                    _g.beginPath();
+                    _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                    _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                    _g.lineTo((this.particles[i + 1].position.x + p1.x) * 0.5, (this.particles[i + 1].position.y + p1.y) * 0.5);
+                    _g.closePath();
+                    _g.stroke();
+                    _g.fill();
+                    _g.beginPath();
+                    _g.moveTo(p1.x, p1.y);
+                    _g.lineTo(p0.x, p0.y);
+                    _g.lineTo((this.particles[i + 1].position.x + p1.x) * 0.5, (this.particles[i + 1].position.y + p1.y) * 0.5);
+                    _g.closePath();
+                    _g.stroke();
+                    _g.fill();
+                } else if (i == this.particleCount - 2) {
+                    _g.beginPath();
+                    _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                    _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                    _g.lineTo((this.particles[i].position.x + p0.x) * 0.5, (this.particles[i].position.y + p0.y) * 0.5);
+                    _g.closePath();
+                    _g.stroke();
+                    _g.fill();
+                    _g.beginPath();
+                    _g.moveTo(p1.x, p1.y);
+                    _g.lineTo(p0.x, p0.y);
+                    _g.lineTo((this.particles[i].position.x + p0.x) * 0.5, (this.particles[i].position.y + p0.y) * 0.5);
+                    _g.closePath();
+                    _g.stroke();
+                    _g.fill();
+                } else {
+                    _g.beginPath();
+                    _g.moveTo(this.particles[i].position.x, this.particles[i].position.y);
+                    _g.lineTo(this.particles[i + 1].position.x, this.particles[i + 1].position.y);
+                    _g.lineTo(p1.x, p1.y);
+                    _g.lineTo(p0.x, p0.y);
+                    _g.closePath();
+                    _g.stroke();
+                    _g.fill();
+                }
+            }
+        }
+        this.Side = function(x1, y1, x2, y2, x3, y3) {
+            return ((x1 - x2) * (y3 - y2) - (y1 - y2) * (x3 - x2));
+        }
+    }
+    ConfettiRibbon.bounds = new Vector2(0, 0);
+    confetti = {};
+    confetti.Context = function(parent) {
+        var i = 0;
+        var canvasParent = document.getElementById(parent);
+        var canvas = document.createElement('canvas');
+        canvas.width = canvasParent.offsetWidth;
+        canvas.height = canvasParent.offsetHeight;
+        canvasParent.appendChild(canvas);
+        var context = canvas.getContext('2d');
+        var interval = null;
+        var confettiRibbonCount = 7;
+        var rpCount = 30;
+        var rpDist = 8.0;
+        var rpThick = 8.0;
+        var confettiRibbons = new Array();
+        ConfettiRibbon.bounds = new Vector2(canvas.width, canvas.height);
+        for (i = 0; i < confettiRibbonCount; i++) {
+            confettiRibbons[i] = new ConfettiRibbon(Math.random() * canvas.width, -Math.random() * canvas.height * 2, rpCount, rpDist, rpThick, 45, 1, 0.05);
+        }
+        var confettiPaperCount = 25;
+        var confettiPapers = new Array();
+        ConfettiPaper.bounds = new Vector2(canvas.width, canvas.height);
+        for (i = 0; i < confettiPaperCount; i++) {
+            confettiPapers[i] = new ConfettiPaper(Math.random() * canvas.width, Math.random() * canvas.height);
+        }
+        this.resize = function() {
+            canvas.width = canvasParent.offsetWidth;
+            canvas.height = canvasParent.offsetHeight;
+            ConfettiPaper.bounds = new Vector2(canvas.width, canvas.height);
+            ConfettiRibbon.bounds = new Vector2(canvas.width, canvas.height);
+        }
+        this.start = function() {
+            this.stop()
+            var context = this
+            this.interval = setInterval(function() {
+                confetti.update();
+            }, 1000.0 / frameRate)
+        }
+        this.stop = function() {
+            clearInterval(this.interval);
+        }
+        this.update = function() {
+            var i = 0;
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            for (i = 0; i < confettiPaperCount; i++) {
+                confettiPapers[i].Update(dt);
+                confettiPapers[i].Draw(context);
+            }
+            for (i = 0; i < confettiRibbonCount; i++) {
+                confettiRibbons[i].Update(dt);
+                confettiRibbons[i].Draw(context);
+            }
+        }
+    }
+    var confetti = new confetti.Context('confetti');
+    confetti.start();
+    $(window).resize(function() {
+        confetti.resize();
+    });
+});
+</script>
 
 </body>
 

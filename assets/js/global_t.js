@@ -26,80 +26,124 @@ $(function(){
 	}
 
 
-  var openTime       = new Date('2020/09/06 9:00:00'); //開始倒數時間
+  var openTime        = new Date('2020/11/01 10:30:00'); //開始倒數時間
 
-  //test
-  var openBNspTimeA   = new Date('2020/09/07 00:00:00');//TT
-  var closeBNspTimeB  = new Date('2020/09/11 23:59:00');//TT
-
-  var openBNspTime   = new Date('2020/09/07 00:00:00');//第一套組開賣
-  var closeBNspTime  = new Date('2020/09/09 00:00:00');//第一套組結束時間
+  //活動倒數
+  var openCountTime   = new Date('2020/11/04 12:00:00');//第一套組開賣
+  var clozCountTime   = new Date('2020/11/11 00:00:00');//第一套組結束時間
   
-	var openBNspTime2  = new Date('2020/09/09 00:00:00');//貼臉
-  var closeBNspTime2 = new Date('2020/09/10 00:00:00');
+	var openCountTime2  = new Date('2020/11/11 00:00:00');
+  var clozCountTime2  = new Date('2020/11/12 00:00:00');
 
-  var openBNspTime3  = new Date('2020/09/10 00:00:00');
-  var closeBNspTime3 = new Date('2020/09/11 00:00:00');
+  var openCountTime3  = new Date('2020/11/12 00:00:00');
+  var clozCountTime3  = new Date('2020/11/13 00:00:00');	
 
-  var openBNspTime4  = new Date('2020/09/11 00:00:00');
-  var closeBNspTime4 = new Date('2020/09/11 23:59:00');
+  //主視覺CTA
+  var openKVCTA    = new Date('2020/11/04 12:00:00');
+  var clozKVCTA    = new Date('2020/11/10 00:00:00');
+  var openKVCTA2   = new Date('2020/11/10 00:00:00');
+  var clozKVCTA2   = new Date('2020/11/12 00:00:00');
+  var openKVCTA3   = new Date('2020/11/12 00:00:00');
+  var clozKVCTA3   = new Date('2020/11/13 00:00:00');
 
-  //timerB
-  var openSale24Time   = new Date('2020/09/07 12:00:00');//第一套組開賣
-  var closeSale24Time  = new Date('2020/09/08 12:00:00');//第一套組結束時間
+  //早鳥折價序號
+  var openCTA   = new Date('2020/11/04 12:00:00');
+  var clozCTA   = new Date('2020/11/01 12:00:00');
+
+  var openCTA2   = new Date('2020/11/01 12:00:00');
+  var clozCTA2   = new Date('2020/11/01 12:00:00');
+
+  var openCTA3   = new Date('2020/11/01 12:00:00');
+  var clozCTA3   = new Date('2020/11/01 12:00:00');
+
+  var openCTA4   = new Date('2020/11/01 12:00:00');
+  var clozCTA4   = new Date('2020/11/01 12:00:00');
+
+  var openCTA5   = new Date('2020/11/01 12:00:00');
+  var clozCTA5   = new Date('2020/11/01 12:00:00');
+
+  var openCTA6   = new Date('2020/11/01 12:00:00');
+  var clozCTA6   = new Date('2020/11/01 12:00:00');
+
+  var openCTA7   = new Date('2020/11/01 12:00:00');
+  var clozCTA7   = new Date('2020/11/01 12:00:00');
+
+  var openCTA8   = new Date('2020/11/01 12:00:00');
+  var clozCTA8   = new Date('2020/11/01 12:00:00');
+
+  //結帳再賺lineP
+  var openLINEA   = new Date('2020/11/04 12:00:00');
+  var clozLINEA   = new Date('2020/11/10 00:00:00');
+
+  var openLINEB   = new Date('2020/11/10 00:00:00');
+  var clozLINEB   = new Date('2020/11/12 00:00:00');
+
+  var openLINEA2   = new Date('2020/11/12 00:00:00');
+  var clozLINEA2   = new Date('2020/11/13 00:00:00');
+
+  //萬元購物車下單抽
+  var openCART_HIDE   = new Date('2020/11/04 12:00:00');
+  var clozCART_HIDE   = new Date('2020/11/07 00:00:00');
+
+  var openCART   = new Date('2020/11/07 00:00:00');
+  var clozCART   = new Date('2020/11/09 00:00:00');
+
+  var openCART_B   = new Date('2020/11/09 00:00:00');
+  var clozCART_B   = new Date('2020/11/13 00:00:00');
+
+  //$1瘋搶
+  var openDOLR_PRE   = new Date('2020/11/04 12:00:00');
+  var clozDOLR_PRE   = new Date('2020/11/07 12:00:00');
+
+  var openDOLR_1     = new Date('2020/11/07 12:00:00');
+  var clozDOLR_1     = new Date('2020/11/08 12:00:00');
+
+  var openDOLR_2     = new Date('2020/11/08 12:00:00');
+  var clozDOLR_2     = new Date('2020/11/09 12:00:00');
+
+  var openDOLR_3     = new Date('2020/11/09 12:00:00');
+  var clozDOLR_3     = new Date('2020/11/10 12:00:00');
+
+  var openDOLR_4     = new Date('2020/11/10 12:00:00');
+  var clozDOLR_4     = new Date('2020/11/11 12:00:00');
+
+  var openDOLR_5     = new Date('2020/11/11 12:00:00');
+  var clozDOLR_5     = new Date('2020/11/12 12:00:00');
+
+  var openDOLR_6     = new Date('2020/11/12 12:00:00');
+  var clozDOLR_6     = new Date('2020/11/13 12:00:00');
+
   
-	var openSale24Time2  = new Date('2020/09/08 12:00:00');//貼臉
-  var closeSale24Time2 = new Date('2020/09/09 12:00:00');
+  //24hr限定秒殺組
+  var openONLYtoday   = new Date('2020/11/04 12:00:00');//第一套組開賣
+  var clozONLYtoday   = new Date('2020/11/05 12:00:00');//第一套組結束時間
 
-  var openSale24Time3  = new Date('2020/09/09 12:00:00');
-  var closeSale24Time3 = new Date('2020/09/10 12:00:00');
+  var openONLYtoday1   = new Date('2020/11/05 12:00:00');
+  var clozONLYtoday1   = new Date('2020/11/06 12:00:00');
 
-  var openSale24Time4  = new Date('2020/09/10 12:00:00');
-  var closeSale24Time4 = new Date('2020/09/11 12:00:00');
+  var openONLYtoday2   = new Date('2020/11/06 12:00:00');
+  var clozONLYtoday2   = new Date('2020/11/07 12:00:00');
 
-  var openSale24Time5  = new Date('2020/09/11 12:00:00');
-  var closeSale24Time5 = new Date('2020/09/11 23:59:00');
+  var openONLYtoday3   = new Date('2020/11/07 12:00:00');
+  var clozONLYtoday3   = new Date('2020/11/08 12:00:00');
+
+  var openONLYtoday4   = new Date('2020/11/08 12:00:00');
+  var clozONLYtoday4   = new Date('2020/11/09 12:00:00');
+
+  var openONLYtoday5   = new Date('2020/11/09 12:00:00');
+  var clozONLYtoday5   = new Date('2020/11/10 12:00:00');
+
+  var openONLYtoday6   = new Date('2020/11/10 12:00:00');
+  var clozONLYtoday6   = new Date('2020/11/11 12:00:00');
+
+  var openONLYtoday7   = new Date('2020/11/11 12:00:00');
+  var clozONLYtoday7   = new Date('2020/11/13 00:00:00');
   
-  //cta TIME
-  var openctaTime   = new Date('2020/09/07 12:00:00');
-  var closectaTime  = new Date('2020/09/08 00:00:00');
 
-  var openctaTime2  = new Date('2020/09/08 00:00:00');
-  var closectaTime2 = new Date('2020/09/09 00:00:00');
 
-  var openctaTime3  = new Date('2020/09/09 00:00:00');
-  var closectaTime3  = new Date('2020/09/10 12:00:00');
+  
 
-  var openctaTime4  = new Date('2020/09/10 12:00:00');
-  var closectaTime4  = new Date('2020/09/10 22:00:00');
-
-  var openctaTime5  = new Date('2020/09/10 22:00:00');
-  var closectaTime5  = new Date('2020/09/11 23:59:00');//壹定要 < closeTime
-
-  //$1瘋搶 OneDlar
-  var openOneDlarTime   = new Date('2020/09/07 00:00:00');
-  var closeOneDlarTime  = new Date('2020/09/08 12:00:00');
-
-  var openOneDlarTime2   = new Date('2020/09/08 12:00:00');
-  var closeOneDlarTime2  = new Date('2020/09/09 12:00:00');
-
-  var openOneDlarTime3  = new Date('2020/09/09 12:00:00');
-  var closeOneDlarTime3 = new Date('2020/09/10 12:00:00');
-
-  var openOneDlarTime4  = new Date('2020/09/10 12:00:00');
-  var closeOneDlarTime4  = new Date('2020/09/11 12:00:00');
-
-  var openOneDlarTime5  = new Date('2020/09/11 12:00:00');
-  var closeOneDlarTime5  = new Date('2020/09/11 23:59:00');//壹定要 < closeTime
-
-  //購物車
-  var openCartTime   = new Date('2020/09/07 00:00:00');
-  var closeCartTime  = new Date('2020/09/08 12:00:00');
-
-  var openCartTime2  = new Date('2020/09/08 12:00:00');
-  var closeCartTime2 = new Date('2020/09/11 23:59:00');
-
-	var closeTime=new Date('2020/09/11 23:59:00'); //timer關閉時間（即將結束）
+	var closeTime=new Date('2020/11/13 00:00:00'); //timer關閉時間（即將結束）
   
   var eventCount=$('.timerA');
   var eventCountB=$('.timerB');
@@ -117,105 +161,140 @@ $(function(){
       eventCountB.show();
       eventEndTxt.hide();
 
-      console.log("testa");
+      // console.log( lastDate );
       
       var lastDate=undefined;
 
       if(newDate > openTime){
-        if( openTime <=newDate && newDate <=openBNspTimeA){
-          lastDate = openBNspTimeA;
+        if( openTime <= newDate && newDate <= openCountTime){
+          lastDate = openCountTime;
+          $('.eventCountdown .timerB .txt').html("開跑倒數");
+          //$('.sp-board,.sp-board2,.sp-board3,.sp-board4').hide();
 
-          $('.timerA .txt').html("開跑倒數"); 
-          
-        }else if(openBNspTimeA<=newDate && newDate<=closeBNspTimeB){
-          lastDate = closeBNspTimeB;
+        }else if(openCountTime<=newDate && newDate<=clozCountTime){
+          lastDate = clozCountTime;
 
-          $('.timerA .txt').html("剩餘");
-          console.log( "!!!!"  +  closeTime);
-         
+          $('.eventCountdown .timerB .txt').html("剩餘");
+          $('.countDownDays .day1').addClass('day_on');
+
+        }else if(openCountTime2<=newDate && newDate<=clozCountTime2){
+          lastDate = clozCountTime2;
+          $('.eventCountdown .timerB .txt').html("剩餘");
+          $('.countDownDays .day1').removeClass('day_on');
+          $('.countDownDays .day2').addClass('day_on');
+        }else if(openCountTime3<=newDate && newDate<=clozCountTime3){
+          lastDate = clozCountTime3;
+          $('.eventCountdown .timerB .txt').html("剩餘");
+          $('.countDownDays .day2').removeClass('day_on');
+          $('.countDownDays .day3').addClass('day_on');
+  
         }else {
           lastDate = closeTime;
-          $('.timerA .txt').html("即將結束");
+          $('.eventCountdown .timerB .txt').html("即將結束");
+          $('.countDownDays').removeClass('day_on');
         }
       }
       else{
-        $('.timerA .txt').html("");
+        $('.eventCountdown .timerB .txt').html("活動結束");
+        $('.countdown_title .time').hide();
       }
 
       ///////////////////////////////////////////////////
       if(newDate > openTime){
-        if( openTime <=newDate && newDate <=openSale24Time){
-          lastDate = openSale24Time;
-          $('.timerB .txt').html("開跑倒數");
-          $('.sale24-board').show();
-          $('.sale24-board2,.sale24-board3,.sale24-board4,.sale24-board5').hide();
+        if( openTime <=newDate && newDate <=clozONLYtoday){
+          lastDate = clozONLYtoday;
+          $('.onlyToday .timerB .txt').html("開跑倒數");
+          $('.onlyToday .today1').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
 
-        }else if(openSale24Time<=newDate && newDate<=closeSale24Time){
-          lastDate = closeSale24Time;
+        }else if(openONLYtoday1<=newDate && newDate<=clozONLYtoday1){
+          lastDate = clozONLYtoday1;
 
-          $('.timerB .txt').html("剩餘");
-          $('.sale24-board').show();
-          $('.sale24-board2,.sale24-board3,.sale24-board4,.sale24-board5').hide();
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today1').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
 
-        }else if(openSale24Time2<newDate && newDate<closeSale24Time2){
-          lastDate = closeSale24Time2;
-          $('.timerB .txt').html("剩餘");
-          $('.sale24-board2').show();
-          $('.sale24-board,.sale24-board3,.sale24-board4,.sale24-board5').hide();
-        }else if(openSale24Time3<newDate && newDate<closeSale24Time3){
-          lastDate = closeSale24Time3;
-          $('.timerB .txt').html("剩餘");
-          $('.sale24-board3').show();
-          $('.sale24-board,.sale24-board2,.sale24-board4,.sale24-board5').hide();
+        }else if(openONLYtoday2<=newDate && newDate<=clozONLYtoday2){
+          lastDate = clozONLYtoday2;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today2').show();
+          $('.onlyToday .today1,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+
+        }else if(openONLYtoday3<=newDate && newDate<=clozONLYtoday3){
+          lastDate = clozONLYtoday3;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today3').show();
+          $('.onlyToday .today2,.onlyToday .today1,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
   
-        }else if(openSale24Time4<newDate && newDate<closeSale24Time4){
-          lastDate = closeSale24Time4;
-          $('.timerB .txt').html("剩餘");
-          $('.sale24-board4').show();
-          $('.sale24-board,.sale24-board2,.sale24-board3,.sale24-board5').hide();
+        }else if(openONLYtoday4<=newDate && newDate<=clozONLYtoday4){
+          lastDate = clozONLYtoday4;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today4').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today1,.onlyToday .today5,.onlyToday .today6').hide();
   
-        }else if(openSale24Time5<newDate && newDate<closeSale24Time5){
-          lastDate = closeSale24Time5;
-          $('.timerB .txt').html("剩餘");
-          $('.sale24-board5').show();
-          $('.sale24-board,.sale24-board2,.sale24-board3,.sale24-board4').hide();
+        }else if(openONLYtoday5<=newDate && newDate<=clozONLYtoday5){
+          lastDate = clozONLYtoday5;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today5').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today6').hide();
+  
+        }else if(openONLYtoday6<=newDate && newDate<=clozONLYtoday6){
+          lastDate = clozONLYtoday6;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today5').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today6').hide();
+  
+        }else if(openONLYtoday7<=newDate && newDate<=clozONLYtoday7){
+          lastDate = clozONLYtoday7;
+
+          $('.onlyToday .timerB .txt').html("倒數");
+          $('.onlyToday .today6').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today5').hide();
   
         }else {
           lastDate = closeTime;
-          $('.timerB .txt').html("即將結束");
-          $('.sale24-board5').show();
-          $('.sale24-board,.sale24-board2,.sale24-board3,.sale24-board4').hide();
+
+          $('.onlyToday .timerB .txt').html("即將結束");
+          $('.onlyToday .today6').show();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today1').hide();
         }
       }
       else{
-        $('.sale24-board,.sale24-board2,.sale24-board3,.sale24-board4,.sale24-board5').hide();
+        $('.onlyToday .today1').show();
+        $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
       }
 
   
-			var spantime = (lastDate - newDate)/1000;
-      var d1 = Math.floor(spantime / (24 * 3600));
-      var h1 = Math.floor((spantime) / 3600 - d * 24 );
-      var m1 = Math.floor((spantime % 3600) / (60));
-      var s1 = Math.floor(spantime % 60);
-      var ms1 = Math.floor( ((lastDate - newDate) - (d*(24 * 60 * 60 * 1000)) - (h*(60 * 60 * 1000)) - (m*(60 * 1000))  - (s*1000)) / 10 % 100);
+			var spantime = (closeTime - newDate)/1000;
+      var d = Math.floor(spantime / (24 * 3600));
+      var h = Math.floor((spantime) / 3600 - d * 24 );
+      var m = Math.floor((spantime % 3600) / (60));
+      var s = Math.floor(spantime % 60);
+      var ms = Math.floor( ((closeTime - newDate) - (d*(24 * 60 * 60 * 1000)) - (h*(60 * 60 * 1000)) - (m*(60 * 1000))  - (s*1000)) / 10 % 100);
 
-      var d2 = Math.floor(spantime / (24 * 3600));
-      var h2 = Math.floor((spantime) / 3600 - d * 24 );
-      var m2 = Math.floor((spantime % 3600) / (60));
-      var s2 = Math.floor(spantime % 60);
-      var ms2 = Math.floor( ((lastDate - newDate) - (d*(24 * 60 * 60 * 1000)) - (h*(60 * 60 * 1000)) - (m*(60 * 1000))  - (s*1000)) / 10 % 100);
+      eventCount.find('.days').html((d<10)?"0"+d:d);
+      eventCount.find('.hours').html((h<10)?"0"+h:h);
+			eventCount.find('.minutes').html((m<10)?"0"+m:m);
+      eventCount.find('.seconds').html((s<10)?"0"+s:s);
+      eventCount.find('.miliseconds').html((ms<10)?"0"+ms:ms);
 
-      eventCount.find('.days').html((d1<10)?"0"+d1:d1);
-      eventCount.find('.hours').html((h1<10)?"0"+h1:h1);
-			eventCount.find('.minutes').html((m1<10)?"0"+m1:m1);
-      eventCount.find('.seconds').html((s1<10)?"0"+s1:s1);
-      eventCount.find('.miliseconds').html((ms1<10)?"0"+ms1:ms1);
+      var spantime = (lastDate - newDate)/1000;
+      var d = Math.floor(spantime / (24 * 3600));
+      var h = Math.floor((spantime) / 3600 - d * 24 );
+      var m = Math.floor((spantime % 3600) / (60));
+      var s = Math.floor(spantime % 60);
+      var ms = Math.floor( ((lastDate - newDate) - (d*(24 * 60 * 60 * 1000)) - (h*(60 * 60 * 1000)) - (m*(60 * 1000))  - (s*1000)) / 10 % 100);
 
-      eventCountB.find('.days').html((d2<10)?"0"+d2:d2);
-      eventCountB.find('.hours').html((h2<10)?"0"+h2:h2);
-			eventCountB.find('.minutes').html((m2<10)?"0"+m2:m2);
-      eventCountB.find('.seconds').html((s2<10)?"0"+s2:s2);
-      eventCountB.find('.miliseconds').html((ms2<10)?"0"+ms2:ms2);
+      eventCountB.find('.days').html((d<10)?"0"+d:d);
+      eventCountB.find('.hours').html((h<10)?"0"+h:h);
+			eventCountB.find('.minutes').html((m<10)?"0"+m:m);
+      eventCountB.find('.seconds').html((s<10)?"0"+s:s);
+      eventCountB.find('.miliseconds').html((ms<10)?"0"+ms:ms);
 			$(window).oneTime(100,function(){setOpenTime(false);});
 		}else{
       eventCount.find('.miliseconds').html("00");
@@ -224,77 +303,113 @@ $(function(){
       eventEndTxt.show();
     }
 
-    //event Days
-    if(newDate>=openBNspTime && newDate<=closeBNspTime){
-      $('.sp-board').show();
-      $('.sp-board2,.sp-board3,.sp-board4').hide();
-    }else if(newDate>=openBNspTime2 && newDate<=closeBNspTime2){
-      $('.sp-board2').show();
-      $('.sp-board,.sp-board3,.sp-board4').hide();
-    }else if(newDate>=openBNspTime3 && newDate<=closeBNspTime3){
-      $('.sp-board3').show();
-      $('.sp-board,.sp-board2,.sp-board4').hide();
-    }else if(newDate>=openBNspTime4){
-      $('.sp-board4').show();
-      $('.sp-board,.sp-board2,.sp-board3').hide();
+    //KV_CTA
+    if(newDate>=openKVCTA2 && newDate<=clozKVCTA2){
+      $('.header-cta b').addClass('part2');
+
+    }else if(newDate>=openKVCTA3 && newDate<=openKVCTA3){
+      $('.header-cta b').removeClass('part2');
+
     }else{
-      $('.sp-board,.sp-board2,.sp-board3,.sp-board4').hide();
+      $('.header-cta b').removeClass('part2');
     }
 
 
-    //CTA
-    if(newDate>=openctaTime && newDate<=closectaTime){
-      $('.ctabx01').show();
-      $('.ctabx02,.ctabx03,.ctabx04').hide();
-    }else if(newDate>=openctaTime2 && newDate<=closectaTime2){
-      $('.ctabx02').show();
-      $('.ctabx03,.ctabx04,.ctabx01').hide();
-    }else if(newDate>=openctaTime3 && newDate<=closectaTime3){
-      $('.ctabx03').show();
-      $('.ctabx01,.ctabx02,.ctabx04').hide();
-    }else if(newDate>=openctaTime4 && newDate<=closectaTime4){
-      $('.ctabx02').show();
-      $('.ctabx03,.ctabx04,.ctabx01').hide();
-    }else if(newDate>=openctaTime5){
-      $('.ctabx04').show();
-      $('.ctabx01,.ctabx02,.ctabx03').hide();
+    //早鳥折價序號
+    if(newDate>=openCTA && newDate<=clozCTA){
+      $('.ctabox1').show();
+      $('.ctabox2,.ctabox3,.ctabox4,.ctabox5,.ctabox6,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA2 && newDate<=clozCTA2){
+      $('.ctabox2').show();
+      $('.ctabox1,.ctabox3,.ctabox4,.ctabox5,.ctabox6,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA3 && newDate<=clozCTA3){
+      $('.ctabox3').show();
+      $('.ctabox1,.ctabox2,.ctabox4,.ctabox5,.ctabox6,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA4 && newDate<=clozCTA4){
+      $('.ctabox4').show();
+      $('.ctabox1,.ctabox2,.ctabox3,.ctabox5,.ctabox6,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA5 && newDate<=clozCTA5){
+      $('.ctabox5').show();
+      $('.ctabox1,.ctabox2,.ctabox3,.ctabox4,.ctabox6,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA6 && newDate<=clozCTA6){
+      $('.ctabox6').show();
+      $('.ctabox1,.ctabox2,.ctabox3,.ctabox4,.ctabox5,.ctabox7,.ctabox8').hide();
+
+    }else if(newDate>=openCTA7 && newDate<=clozCTA7){
+      $('.ctabox7').show();
+      $('.ctabox1,.ctabox2,.ctabox3,.ctabox4,.ctabox5,.ctabox6,.ctabox8').hide();
+
+    }else if(newDate>=openCTA8){
+      $('.ctabox8').show();
+      $('.ctabox1,.ctabox2,.ctabox3,.ctabox4,.ctabox5,.ctabox6,.ctabox7').hide();
+
     }else{
-      $('.ctabx01').show();
-      $('.ctabx02,.ctabx03,.ctabx04').hide();
+      $('.ctabox1').show();
+      $('.ctabox2,.ctabox3,.ctabox4,.ctabox5,.ctabox6,.ctabox7,.ctabox8').hide();
+    }
+
+    //結帳再賺lineP
+    if(newDate>=openLINEA && newDate<=clozLINEA){
+      $('.specialBonus_v1').show();
+      $('.specialBonus_v2').hide();
+
+    }else if(newDate>=openLINEB && newDate<=clozLINEB){
+      $('.specialBonus_v2').show();
+      $('.specialBonus_v1').hide();
+
+    }else if(newDate>=openLINEA2 && newDate<=clozLINEA2){
+      $('.specialBonus_v1').show();
+      $('.specialBonus_v2').hide();
+
+    }else{
+      $('.specialBonus_v1').show();
+      $('.specialBonus_v2').hide();
+    }
+
+    //萬元購物車下單抽
+    if(newDate>=openCART_HIDE && newDate<=clozCART_HIDE){
+      $('.millionCart').css('display','none');
+
+    }else if(newDate>=openCART && newDate<=clozCART){
+      $('.millionCart_v1').show();
+      $('.millionCart_v2').hide();
+
+    }else if(newDate>=openCART_B && newDate<=clozCART_B){
+      $('.millionCart_v1,.millionCart_v2').show();
+      
+    }else{
+      $('.millionCart').css('display','none');
     }
 
     //$1瘋搶
-    if(newDate>=openOneDlarTime && newDate<=closeOneDlarTime){//未開賣
-      $('.preimgD1,.preimgD2,.preimgD3,.preimgD4').show();
-      $('.onimgD1,.onimgD2,.onimgD3,.onimgD4').hide();
-    }else if(newDate>=openOneDlarTime2 && newDate<=closeOneDlarTime2){
-      $('.onimgD1,.preimgD2,.preimgD3,.preimgD4').show();
-      $('.preimgD1,.onimgD2,.onimgD3,.onimgD4').hide();
-    }else if(newDate>=openOneDlarTime3 && newDate<=closeOneDlarTime3){
-      $('.onimgD1,.onimgD2,.preimgD3,.preimgD4').show();
-      $('.preimgD1,.preimgD2,.onimgD3,.onimgD4').hide();
-    }else if(newDate>=openOneDlarTime4 && newDate<=closeOneDlarTime4){
-      $('.onimgD1,.onimgD2,.onimgD3,.preimgD4').show();
-      $('.preimgD1,.preimgD2,.preimgD3,.onimgD4').hide();
-    }else if(newDate>=openOneDlarTime5){
-      $('.onimgD1,.onimgD2,.onimgD3,.onimgD4').show();
-      $('.preimgD1,.preimgD2,.preimgD3,.preimgD4').hide();
+    if(newDate>=openDOLR_1 && newDate<=clozDOLR_1){
+      $('.crazyOneDollor .detList.d1').removeClass('pre').addClass('on');
+
+    }else if(newDate>=openDOLR_2 && newDate<=clozDOLR_2){
+      $('.crazyOneDollor .detList.d2').removeClass('pre').addClass('on');
+
+    }else if(newDate>=openDOLR_3 && newDate<=clozDOLR_3){
+      $('.crazyOneDollor .detList.d3').removeClass('pre').addClass('on');
+
+    }else if(newDate>=openDOLR_4 && newDate<=clozDOLR_4){
+      $('.crazyOneDollor .detList.d4').removeClass('pre').addClass('on');
+
+    }else if(newDate>=openDOLR_5 && newDate<=clozDOLR_5){
+      $('.crazyOneDollor .detList.d5').removeClass('pre').addClass('on');
+
+    }else if(newDate>=openDOLR_6 && newDate<=clozDOLR_6){
+      $('.crazyOneDollor .detList.d6').removeClass('pre').addClass('on');
+      
     }else{
-      $('.preimgD1,.preimgD2,.preimgD3,.preimgD4').show();
-      $('.onimgD1,.onimgD2,.onimgD3,.onimgD4').hide();
+      $('.crazyOneDollor .detList').removeClass('on').addClass('pre');
     }
 
-    //購物車
-    if(newDate>=openCartTime && newDate<=closeCartTime){ //未開賣
-      $('.cartA').show();
-      $('.cartB').hide();
-    }else if(newDate>=openCartTime2){ //第一組
-      $('.cartB').show();
-      $('.cartA').hide();
-    }else{
-      $('.cartA').show();
-      $('.cartB').hide();
-    }
+
 	}
 	
 	setOpenTime(true);
