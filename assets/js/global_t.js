@@ -29,7 +29,7 @@ $(function(){
   var openTime        = new Date('2020/11/01 10:30:00'); //開始倒數時間
 
   //活動倒數
-  var openCountTime   = new Date('2020/11/04 12:00:00');//第一套組開賣
+  var openCountTime   = new Date('2020/11/04 00:00:00');//第一套組開賣
   var clozCountTime   = new Date('2020/11/11 00:00:00');//第一套組結束時間
   
 	var openCountTime2  = new Date('2020/11/11 00:00:00');
@@ -39,7 +39,7 @@ $(function(){
   var clozCountTime3  = new Date('2020/11/13 00:00:00');	
 
   //主視覺CTA
-  var openKVCTA    = new Date('2020/11/04 12:00:00');
+  var openKVCTA    = new Date('2020/11/04 00:00:00');
   var clozKVCTA    = new Date('2020/11/10 00:00:00');
   var openKVCTA2   = new Date('2020/11/10 00:00:00');
   var clozKVCTA2   = new Date('2020/11/12 00:00:00');
@@ -47,32 +47,32 @@ $(function(){
   var clozKVCTA3   = new Date('2020/11/13 00:00:00');
 
   //早鳥折價序號
-  var openCTA   = new Date('2020/11/04 12:00:00');
-  var clozCTA   = new Date('2020/11/01 12:00:00');
+  var openCTA   = new Date('2020/11/04 00:00:00');
+  var clozCTA   = new Date('2020/11/05 00:00:00');
 
-  var openCTA2   = new Date('2020/11/01 12:00:00');
-  var clozCTA2   = new Date('2020/11/01 12:00:00');
+  var openCTA2   = new Date('2020/11/05 00:00:00');
+  var clozCTA2   = new Date('2020/11/06 00:00:00');
 
-  var openCTA3   = new Date('2020/11/01 12:00:00');
-  var clozCTA3   = new Date('2020/11/01 12:00:00');
+  var openCTA3   = new Date('2020/11/06 00:00:00');
+  var clozCTA3   = new Date('2020/11/07 00:00:00');
 
-  var openCTA4   = new Date('2020/11/01 12:00:00');
-  var clozCTA4   = new Date('2020/11/01 12:00:00');
+  var openCTA4   = new Date('2020/11/07 00:00:00');
+  var clozCTA4   = new Date('2020/11/08 00:00:00');
 
-  var openCTA5   = new Date('2020/11/01 12:00:00');
-  var clozCTA5   = new Date('2020/11/01 12:00:00');
+  var openCTA5   = new Date('2020/11/08 00:00:00');
+  var clozCTA5   = new Date('2020/11/09 00:00:00');
 
-  var openCTA6   = new Date('2020/11/01 12:00:00');
-  var clozCTA6   = new Date('2020/11/01 12:00:00');
+  var openCTA6   = new Date('2020/11/09 00:00:00');
+  var clozCTA6   = new Date('2020/11/10 21:00:00');
 
-  var openCTA7   = new Date('2020/11/01 12:00:00');
-  var clozCTA7   = new Date('2020/11/01 12:00:00');
+  var openCTA7   = new Date('2020/11/10 21:00:00');
+  var clozCTA7   = new Date('2020/11/12 00:00:00');
 
-  var openCTA8   = new Date('2020/11/01 12:00:00');
-  var clozCTA8   = new Date('2020/11/01 12:00:00');
+  var openCTA8   = new Date('2020/11/12 00:00:00');
+  var clozCTA8   = new Date('2020/11/13 00:00:00');
 
   //結帳再賺lineP
-  var openLINEA   = new Date('2020/11/04 12:00:00');
+  var openLINEA   = new Date('2020/11/04 00:00:00');
   var clozLINEA   = new Date('2020/11/10 00:00:00');
 
   var openLINEB   = new Date('2020/11/10 00:00:00');
@@ -83,12 +83,12 @@ $(function(){
 
   //萬元購物車下單抽
   var openCART_HIDE   = new Date('2020/11/04 12:00:00');
-  var clozCART_HIDE   = new Date('2020/11/07 00:00:00');
+  var clozCART_HIDE   = new Date('2020/11/06 12:00:00');
 
-  var openCART   = new Date('2020/11/07 00:00:00');
-  var clozCART   = new Date('2020/11/09 00:00:00');
+  var openCART   = new Date('2020/11/06 12:00:00');
+  var clozCART   = new Date('2020/11/08 12:00:00');
 
-  var openCART_B   = new Date('2020/11/09 00:00:00');
+  var openCART_B   = new Date('2020/11/08 12:00:00');
   var clozCART_B   = new Date('2020/11/13 00:00:00');
 
   //$1瘋搶
@@ -204,57 +204,57 @@ $(function(){
         if( openTime <=newDate && newDate <=clozONLYtoday){
           lastDate = clozONLYtoday;
           $('.onlyToday .timerB .txt').html("開跑倒數");
-          $('.onlyToday .today1').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+          $('.onlyToday .today1').hide();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
 
         }else if(openONLYtoday1<=newDate && newDate<=clozONLYtoday1){
           lastDate = clozONLYtoday1;
 
           $('.onlyToday .timerB .txt').html("倒數");
           $('.onlyToday .today1').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
 
         }else if(openONLYtoday2<=newDate && newDate<=clozONLYtoday2){
           lastDate = clozONLYtoday2;
 
           $('.onlyToday .timerB .txt').html("倒數");
           $('.onlyToday .today2').show();
-          $('.onlyToday .today1,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+          $('.onlyToday .today1,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
 
         }else if(openONLYtoday3<=newDate && newDate<=clozONLYtoday3){
           lastDate = clozONLYtoday3;
 
           $('.onlyToday .timerB .txt').html("倒數");
           $('.onlyToday .today3').show();
-          $('.onlyToday .today2,.onlyToday .today1,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+          $('.onlyToday .today1,.onlyToday .today2,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
   
         }else if(openONLYtoday4<=newDate && newDate<=clozONLYtoday4){
           lastDate = clozONLYtoday4;
 
           $('.onlyToday .timerB .txt').html("倒數");
           $('.onlyToday .today4').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today1,.onlyToday .today5,.onlyToday .today6').hide();
+          $('.onlyToday .today1,.onlyToday .today2,.onlyToday .today3,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
   
         }else if(openONLYtoday5<=newDate && newDate<=clozONLYtoday5){
           lastDate = clozONLYtoday5;
 
           $('.onlyToday .timerB .txt').html("倒數");
           $('.onlyToday .today5').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today6').hide();
+          $('.onlyToday .today1,.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today6,.onlyToday .today7').hide();
   
         }else if(openONLYtoday6<=newDate && newDate<=clozONLYtoday6){
           lastDate = clozONLYtoday6;
 
           $('.onlyToday .timerB .txt').html("倒數");
-          $('.onlyToday .today5').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today6').hide();
+          $('.onlyToday .today6').show();
+          $('.onlyToday .today1,.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today7').hide();
   
         }else if(openONLYtoday7<=newDate && newDate<=clozONLYtoday7){
           lastDate = clozONLYtoday7;
 
           $('.onlyToday .timerB .txt').html("倒數");
-          $('.onlyToday .today6').show();
-          $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today1,.onlyToday .today5').hide();
+          $('.onlyToday .today7').show();
+          $('.onlyToday .today1,.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
   
         }else {
           lastDate = closeTime;
@@ -265,8 +265,8 @@ $(function(){
         }
       }
       else{
-        $('.onlyToday .today1').show();
-        $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6').hide();
+        $('.onlyToday .today1').hide();
+        $('.onlyToday .today2,.onlyToday .today3,.onlyToday .today4,.onlyToday .today5,.onlyToday .today6,.onlyToday .today7').hide();
       }
 
   
@@ -381,6 +381,7 @@ $(function(){
 
     }else if(newDate>=openCART_B && newDate<=clozCART_B){
       $('.millionCart_v1,.millionCart_v2').show();
+      $('.millionCart_v1 h1').css('display','none');
       
     }else{
       $('.millionCart').css('display','none');

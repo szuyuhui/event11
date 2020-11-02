@@ -30,33 +30,69 @@
   
   <!-- C S S -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" />
-  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" /> -->
-  <!-- <link href="assets/css/navlight.css" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="assets/css/main_style.css">
 
+  <!-- ByeIQ JS code -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['EmaticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//api.ematicsolutions.com/v1/ematic.min.js','ematics');
+
+    var ematicApikey = "0a9d6c7da74811e8b2ba0242ac110002-sg3";
+    var opt = {
+        email: "",
+        country_iso: "TW",
+        currency_iso: "TWD",
+        language_iso: "en"
+    };
+    
+    //initialize
+    ematics("create", ematicApikey, opt);
+  </script>
+      
+  <!-------------- 追蹤碼ST ------------->		
+  <!-- google analytics -->
+  <script type="text/javascript" src="https://www.naruko.com.tw/shop/js/naruko_ga.js"></script>
+  <!--/ google analytics -->
+  <!-- Gridsum tracking code begin. -->
+  <script type='text/javascript' src="https://www.webdissector.com/js/Clients/GWD-000254-04656F/gs.js"></script>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W66FC28"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!-------------- 追蹤碼END ------------->	
+      <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W66FC28');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W66FC28"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->		
+  <script type="application/javascript">(function(w,d,t,r,u){w[u]=w[u]||[];w[u].push({'projectId':'10000','properties':{'pixelId':'14755'}});var s=d.createElement(t);s.src=r;s.async=true;s.onload=s.onreadystatechange=function(){var y,rs=this.readyState,c=w[u];if(rs&&rs!="complete"&&rs!="loaded"){return}try{y=YAHOO.ywa.I13N.fireBeacon;w[u]=[];w[u].push=function(p){y([p])};y(c)}catch(e){}};var scr=d.getElementsByTagName(t)[0],par=scr.parentNode;par.insertBefore(s,scr)})(window,document,"script","https://s.yimg.com/wi/ytc.js","dotq");</script>	
 
   <script>
-    // $(function() {
-    //   if(window.location.hash) {
-    //   $('html, body').animate({
-    //       scrollTop: $(window.location.hash).offset().top - 140 
-    //     }, 1500, 'swing');
-    //   }
-    // });
-
-    // $(function(){
-    //   if(location.hash){
-    //     var target = $(location.hash);
-    //     if(target.length==1){
-    //       var top = target.offset().top-50;
-    //       if(top > 0){
-    //           $('html,body').animate({scrollTop:top}, 1000);
-    //       }
-    //     }
-    //   }
-    // });
+  window.appier_q = window.appier_q || [];
+  window.appier_q.push(
+    {"t": "register", "content": { "id": "Na5U", "site": "naruko.com.tw" }},
+    {"t":"pv_track","action_id": "36ba0448b7a17d4","track_id":"P2X0Hh50R9r6j5b","isCountReload": true,"counter": 0})
+  </script>
+  <script src="//jscdn.appier.net/aa.js?id=naruko.com.tw" defer></script>	
+      <script type='text/javascript'>
+  var tagtoo_advertiser_id=329;
+  var tagtoo_ga=document.createElement('script');
+  tagtoo_ga.type='text/javascript';
+  tagtoo_ga.async=true;
+  tagtoo_ga.src='//ad.tagtoo.co/media/ad/track.js';
+  var tagtoo_s=document.getElementsByTagName('script')[0];
+  tagtoo_s.parentNode.insertBefore(tagtoo_ga,tagtoo_s);
   </script>
 
 </head>
@@ -191,7 +227,7 @@
     </section>
 
     <!--早鳥折價序號 [三版共用] -->
-    <section class="couponWrap" id="DATE">
+    <section class="couponWrap" id="DATE" data-aos="fade-up">
       <div class="ctabox1">
         <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AGP" target="_blank"></a>
       </div>
@@ -221,7 +257,7 @@
     <!-- 全站優惠 [三版共用] -->
     <section class="allDiscount js-PC js-navlight_content" id="SP1">
       <div class="container-1200">
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="fade-down">
           <div class="pcBlock">
             <span>
               <img src="assets/image/title_discount.png" alt="全站優惠 結帳現折">
@@ -235,42 +271,42 @@
         </h1>
         <div class="discountWrap">
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount1.png" alt="滿$400折$50">
               </a>
             </div>
           </div>
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="300">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount2.png" alt="滿$1200折$200">
               </a>
             </div>
           </div>
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="500">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount3.png" alt="滿$2000折$250">
               </a>
             </div>
           </div>
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="700">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount4.png" alt="滿$3600折$500">
               </a>
             </div>
           </div>
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="900">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount5.png" alt="滿$4800折#1111">
               </a>
             </div>
           </div>
           <div class="discountList">
-            <div>
+            <div data-aos="fade-up" data-aos-delay="1000">
               <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#AAD" target="_blank">
                 <img src="assets/image/discount6.png" alt="滿$39999折$1.1萬">
               </a>
@@ -281,10 +317,10 @@
     </section>
 
     <!-- 結帳再賺 [三版共用] -->
-    <section class="specialBonus" id="SP2">
+    <section class="specialBonus" id="SP2" data-aos="fade-down">
       <div class="container-1200">
         <div class="specialBonus_v1">
-          <h1 class="sectionTitle signle">
+          <h1 class="sectionTitle signle" data-aos="fade-up">
             <span>
               <img src="assets/image/title_specialBouns.png" alt="結帳再賺 狂飆回饋">
             </span>
@@ -298,7 +334,7 @@
         </div>
         <!-- LINE Points 42% -->
         <div class="specialBonus_v2">
-          <h1 class="sectionTitle signle">
+          <h1 class="sectionTitle signle" data-aos="fade-up">
             <div class="pcBlock">
               <span>
                 <img src="assets/image/title_specialBouns_v2.png" class="title" alt="LINE Points 加碼回饋">
@@ -321,10 +357,25 @@
     </section>
 
     <!-- 萬元購物車下單抽 [三版共用] -->
-    <section class="millionCart" id="SP3">
-      <div class="container-1200">
+    <section class="millionCart" id="SP3" data-aos="fade-up">
+      <div class="container-1200"> 
+        <div class="millionCart_v2">
+          <h1 class="sectionTitle signle" data-aos="fade-down">
+            <span>
+              <img src="assets/image/title_millionCart_v2.png" alt="抽11.1萬">
+            </span>
+          </h1>
+          <div class="wrapset-Big">
+            <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#111CP" target="_blank">
+              <img src="assets/image/millionCart_v2.png" alt="不限金額下單抽 " class="pcBlock">
+              <img src="assets/image/millionCart_v2_m.png" alt="清空萬元購物車" class="mbBlock">
+            </a>
+          </div>
+        </div>
+
+        <!-- 萬元購物車下單抽 _V2 [三版共用] -->
         <div class="millionCart_v1">
-          <h1 class="sectionTitle signle">
+          <h1 class="sectionTitle signle" data-aos="fade-down">
             <span>
               <img src="assets/image/title_millionCart.png" alt="不限金額 下單抽">
             </span>
@@ -336,29 +387,13 @@
             </a>
           </div>
         </div>
-
-        <!-- 萬元購物車下單抽 _V2 [三版共用] -->
-        <div class="millionCart_v2">
-          <h1 class="sectionTitle signle">
-            <span>
-              <img src="assets/image/title_millionCart_v2.png" alt="不限金額 下單+抽11.1萬">
-            </span>
-          </h1>
-          <div class="wrapset-Big">
-            <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#111CP" target="_blank">
-              <img src="assets/image/millionCart_v2.png" alt="不限金額下單抽 " class="pcBlock">
-              <img src="assets/image/millionCart_v2_m.png" alt="清空萬元購物車" class="mbBlock">
-            </a>
-          </div>
-        </div>
-        
       </div>
     </section>
 
     <!-- 紅利奪寶 [三版共用] -->
-    <section class="specialPoints" id="SP4">
+    <section class="specialPoints" id="SP4" data-aos="fade-up">
       <div class="container-1200">
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="fade-down">
           <span class="small">
             <img src="assets/image/title_specialPoints.png" alt="紅利奪寶">
           </span>
@@ -376,9 +411,9 @@
     </section>
 
     <!-- 更多優惠活動 [三版共用] -->
-    <section class="comboSpecial" id="SP6">
+    <section class="comboSpecial" id="SP6" data-aos="fade-up">
       <div class="container-1200">
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="fade-dwon">
           <span class="small">
             <img src="assets/image/title_comboSpeical.png" alt="更多優惠活動">
           </span>
@@ -391,7 +426,7 @@
           </div>
           <div class="setList">
             <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#NEW" target="_blank">
-              <img src="assets/image/comboSpecial_b.png" alt="新客禮 折抵$200">
+              <img src="assets/image/comboSpecial_b.gif" alt="新客禮 折抵$200">
             </a>
           </div>
           <div class="setList">
@@ -410,12 +445,12 @@
 
     <!-- LIVE 直播  -->
     <section id="LIVE" class="liveWrap">
-      <div class="container-1200">
+      <div class="container-1200" data-aos="fade-up">
           <ul class="js-PC js-navlight_content">
             <!-- 預告：pre / 直播中：on / 直播結束：unavailable -->
-            <li class="day1 pre"><a href="#" target="_blank"></a></li>
-            <li class="day2 pre"><a href="#" target="_blank"></a></li>
-            <li class="day3 pre"><a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#11D" target="_blank"></a></li>
+            <li class="day1 pre"><a href="https://www.facebook.com/naruko.tw/" target="_blank"></a></li>
+            <li class="day2 pre"><a href="https://www.facebook.com/YAKOZHAN411" target="_blank"></a></li>
+            <li class="day3 pre"><a href="https://line.me/R/ti/p/%40801updpf" target="_blank"></a></li>
           </ul> 
       </div>
     </section>
@@ -437,16 +472,16 @@
           <i>11/7-12 每日12點準時開搶 <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#11D" target="_blank">活動說明</a> </i>
         </h1>
 
-        <div class="wrapSet--2--2" id="1D">
+        <div class="wrapSet--2--2" id="1D" data-aos="fade-up">
           <!-- 狀態加在 setList 後面-->
           <!--- pre :預售中 / on :熱賣中 /  soldout :售完 -->
           <!-- 11/7 -->
           <div class="setList d1 pre">
-            <a href="#" target="_blank" class="preimgD1">
-              <img src="assets/img_main/onedollor_day1_pre.png" alt="美白寶">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDkzcWc4ZzA4cWQxcjc2NzZmbGgyMWthMjEgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD1">
+              <img src="assets/img_main/onedollor_day1_pre.gif" alt="美白寶">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559614" target="_blank" class="onimgD1">
-              <img src="assets/img_main/onedollor_day1_on.png" alt="美白寶">
+              <img src="assets/img_main/onedollor_day1_on.gif" alt="美白寶">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD1">
               <img src="assets/img_main/onedollor_day1_soldout.png" alt="美白寶">
@@ -455,25 +490,25 @@
 
           <!-- 11/8 -->
           <div class="setList d2 pre">
-            <a href="#" target="_blank" class="preimgD2">
-              <img src="assets/img_main/onedollor_day2_pre.png" alt="粉刺寶">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NzdnbG12Ym5lOWUyZzI3bWM4bTNrOHUxM3AgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD2">
+              <img src="assets/img_main/onedollor_day2_pre.gif" alt="粉刺寶">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559618" target="_blank" class="onimgD2">
-              <img src="assets/img_main/onedollor_day2_on.png" alt="粉刺寶">
+              <img src="assets/img_main/onedollor_day2_on.gif" alt="粉刺寶">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD2">
               <img src="assets/img_main/onedollor_day2_soldout.png" alt="粉刺寶">
             </a>
           </div>
         </div>
-        <div class="wrapSet--2--2" id="1Da">
+        <div class="wrapSet--2--2" id="1Da" data-aos="fade-up">
           <!-- 11/9 -->
           <div class="setList d3 pre">
-            <a href="#" target="_blank" class="preimgD3">
-              <img src="assets/img_main/onedollor_day3_pre.png" alt="美白晶露">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=N3QxYm9vajVuaTUwaTd2MGhvdG1sb3JzbmwgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD3">
+              <img src="assets/img_main/onedollor_day3_pre.gif" alt="美白晶露">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559622" target="_blank" class="onimgD3">
-              <img src="assets/img_main/onedollor_day3_on.png" alt="美白晶露">
+              <img src="assets/img_main/onedollor_day3_on.gif" alt="美白晶露">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD3">
               <img src="assets/img_main/onedollor_day3_soldout.png" alt="美白晶露">
@@ -482,38 +517,38 @@
 
           <!-- 11/10 -->
           <div class="setList d4 pre">
-            <a href="#" target="_blank" class="preimgD4">
-              <img src="assets/img_main/onedollor_day4_pre.png" alt="抗老安平">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MHM2ZGxzNW90bTJxbjlhbG05Nzd1ZDE0MWQgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD4">
+              <img src="assets/img_main/onedollor_day4_pre.gif" alt="抗老安瓶">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559626" target="_blank" class="onimgD4">
-              <img src="assets/img_main/onedollor_day4_on.png" alt="抗老安平">
+              <img src="assets/img_main/onedollor_day4_on.gif" alt="抗老安瓶">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD4">
-              <img src="assets/img_main/onedollor_day4_soldout.png" alt="抗老安平">
+              <img src="assets/img_main/onedollor_day4_soldout.png" alt="抗老安瓶">
             </a>
           </div>
         </div>
-        <div class="wrapSet--2--2" id="1Db">
+        <div class="wrapSet--2--2" id="1Db" data-aos="fade-up">
           <!-- 11/11 -->
           <div class="setList d5 pre">
-            <a href="#" target="_blank" class="preimgD5">
-              <img src="assets/img_main/onedollor_day5_pre.png" alt="美白安平">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NTZvc2o1ZHJlMnNsM21vZ2VqZmg2Z3A2Y2UgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD5">
+              <img src="assets/img_main/onedollor_day5_pre.gif" alt="美白安瓶">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559630" target="_blank" class="onimgD5">
-              <img src="assets/img_main/onedollor_day5_on.png" alt="美白安平">
+              <img src="assets/img_main/onedollor_day5_on.gif" alt="美白安瓶">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD5">
-              <img src="assets/img_main/onedollor_day5_soldout.png" alt="美白安平">
+              <img src="assets/img_main/onedollor_day5_soldout.png" alt="美白安瓶">
             </a>
           </div>
 
           <!-- 11/12 -->
           <div class="setList d6 pre">
-            <a href="#" target="_blank" class="preimgD6">
-              <img src="assets/img_main/onedollor_day6_pre.png" alt="精華油">
+            <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MjN2bW4zcGxrOHZpbTdvMG1hZmJnazNodnYgbmFydWtvZWNAbQ&amp;tmsrc=narukoec%40gmail.com" target="_blank" class="preimgD6">
+              <img src="assets/img_main/onedollor_day6_pre.gif" alt="精華油">
             </a>
             <a href="http://naruko.com.tw/shop/product/index.php?pid=99559634" target="_blank" class="onimgD6">
-              <img src="assets/img_main/onedollor_day6_on.png" alt="精華油">
+              <img src="assets/img_main/onedollor_day6_on.gif" alt="精華油">
             </a>
             <a href="javascript:void(0);" class="soldoutimgD6">
               <img src="assets/img_main/onedollor_day6_soldout.png" alt="精華油">
@@ -525,7 +560,7 @@
     </section>
 
     <!-- 24hr限定秒殺組 [三版共用] -->
-    <section class="onlyToday js-PC js-navlight_content" id="24h">
+    <section class="onlyToday js-PC js-navlight_content" id="24h" data-aos="fade-up">
       <div class="container-1200">
 
         <!-- 11/5 -->
@@ -765,7 +800,7 @@
         </div>
 
         <!-- 11/11 -->
-        <div class="todayWrap today6">
+        <div class="todayWrap today7">
           <div class="countdown_title">
             <div class="title">
               <img src="assets/image/title_onlyToday.jpg" alt="24hr限定秒殺組">
@@ -809,7 +844,7 @@
     
 
     <!-- 熱搜排行 -->
-    <section class="bestSellers js-PC js-navlight_content" id="TOP">
+    <section class="bestSellers js-PC js-navlight_content" id="TOP" data-aos="fade-up">
       <div class="container-1200">
         <!-- 橫幅 -->
         <div class="salebanner">
@@ -826,13 +861,17 @@
               <div class="setList">
                 <b class="tagtop top1"></b>
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559270" target="_blank">
-                  <img src="assets/img_main/574x226_01.jpg" alt="">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_01.jpg" alt="">
+                  </b>
                 </a>
               </div>
               <div class="setList">
                 <b class="tagtop top2"></b>
                 <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559310" target="_blank">
-                  <img src="assets/img_main/574x226_03.jpg" alt="">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_03.jpg" alt="">
+                  </b>
                 </a>
               </div>
               
@@ -844,27 +883,35 @@
               <div class="mbBlock">
                 <div class="wrapSet--2--1 mbBlock">
                   <div class="setList">
-                    <b class="tagtop top3"></b>
+                    <div class="tagtop top3"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559434" target="_blank">
-                      <img src="assets/img_main/NA_574x226_03.jpg" alt="">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/NA_574x226_03.jpg" alt="">
+                      </b>
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top4"></b>
+                    <div class="tagtop top4"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559438" target="_blank">
-                      <img src="assets/img_main/NA_574x226_04.jpg" alt="">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/NA_574x226_04.jpg" alt="">
+                      </b>
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top5"></b>
+                    <div class="tagtop top5"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559586" target="_blank">
-                      <img src="assets/img_main/AP_574x226_01.jpg" alt="">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/AP_574x226_01.jpg" alt="">
+                      </b>
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top6"></b>
+                    <div class="tagtop top6"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559522" target="_blank">
-                      <img src="assets/img_main/AP_574x226_05.jpg" alt="">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/AP_574x226_05.jpg" alt="">
+                      </b>
                     </a>
                   </div>
                 </div>
@@ -872,9 +919,11 @@
               <div class="pcBlock">
                 <div class="wrapSet--4--2">
                   <div class="setList">
-                    <b class="tagtop top3"></b>
+                    <div class="tagtop top3"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559434" target="_blank">
-                      <img src="assets/img_main/NA_500x500_03.jpg" class="pic">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/NA_500x500_03.jpg" class="pic">
+                      </b>
                       <h3>淡化痘疤★自帶閃光</h3>
                       <h4>結帳48折★美白寶6入</h4>
                       <p>
@@ -884,9 +933,11 @@
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top4"></b>
+                    <div class="tagtop top4"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559438" target="_blank">
-                      <img src="assets/img_main/NA_500x500_04.jpg" class="pic">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/NA_500x500_04.jpg" class="pic">
+                      </b>
                       <h3>業界最高濃度水楊酸</h3>
                       <h4>結帳48折★粉刺寶6入</h4>
                       <p>
@@ -896,10 +947,12 @@
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top5"></b>
+                    <div class="tagtop top5"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559586" target="_blank">
-                      <img src="assets/img_main/AP_500x500_01.jpg" class="pic">
-                     <h3>熱銷冠軍★凍齡防曬</h3>
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/AP_500x500_01.jpg" class="pic">
+                      </b>
+                      <h3>熱銷冠軍★凍齡防曬</h3>
                       <h4>胜肽防曬5入</h4>
                       <p>
                         <u>$2750</u>
@@ -908,9 +961,11 @@
                     </a>
                   </div>
                   <div class="setList">
-                    <b class="tagtop top6"></b>
+                    <div class="tagtop top6"></div>
                     <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559522&" target="_blank">
-                      <img src="assets/img_main/AP_500x500_13.jpg" class="pic">
+                      <b class="lineMoney30">
+                        <img src="assets/img_main/AP_500x500_13.jpg" class="pic">
+                      </b>
                       <h3>官網獨賣★高濃度美白</h3>
                       <h4>25折★淡斑精華3入</h4>
                       <p>
@@ -928,532 +983,532 @@
     </section>
 
     <!-- 京城jc專區 -->
-    <div class="js-PC js-navlight_content">
-    <section id="JC" class="brandSection brandJc">
-      <div class="container-1200">
-        <!-- 橫幅 -->
-        <div class="salebanner">
-          <a href="#" target="_blank">
-            <img src="assets/img_main/salebanner-jc.jpg" alt="頂級不老神霜 雙11囤貨狂降23折" class="pcBlock">
-            <img src="assets/img_main/salebanner-jc_m.jpg" alt="頂級不老神霜 雙11囤貨狂降23折" class="mbBlock">
-          </a>
-        </div>
+    <div class="js-PC js-navlight_content" data-aos="fade-up">
+      <section id="JC" class="brandSection brandJc">
+        <div class="container-1200">
+          <!-- 橫幅 -->
+          <div class="salebanner">
+            <a href="https://www.naruko.com.tw/shop/act/1404-jingcheng/index.html" target="_blank">
+              <img src="assets/img_main/salebanner-jc.jpg" alt="頂級不老神霜 雙11囤貨狂降23折" class="pcBlock">
+              <img src="assets/img_main/salebanner-jc_m.jpg" alt="頂級不老神霜 雙11囤貨狂降23折" class="mbBlock">
+            </a>
+          </div>
 
-        <div class="lineWrap">
-          <div class="yellowLine">
+          <div class="lineWrap">
+            <div class="yellowLine">
 
-              <!--兩個一排-->
-            <div class="wrapSet--2--1">
-              <div class="setList" id="JC1">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559270" target="_blank">
-                  <b class="lineMoney30">
-                    <img src="assets/img_main/574x226_01.jpg" alt="">
-                  </b>
-                </a>
+                <!--兩個一排-->
+              <div class="wrapSet--2--1">
+                <div class="setList" id="JC1">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559270" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/574x226_01.jpg" alt="">
+                    </b>
+                  </a>
+                </div>
+                <div class="setList" id="JC1a">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559274" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/574x226_02.jpg" alt="">
+                    </b>
+                  </a>
+                </div>
               </div>
-              <div class="setList" id="JC1a">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559274" target="_blank">
-                  <b class="lineMoney30">
-                    <img src="assets/img_main/574x226_02.jpg" alt="">
-                  </b>
-                </a>
+
+              <!--四個一排-->
+              <div class="wrapSet--4--2" id="JC2">
+                <div class="setList">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559278" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/prod/JC_500x500_03.jpg" class="pic">
+                    </b>
+                    <h3>經典紅霜★美白退黯</h3>
+                    <h4>到手23折↘不老神霜美白安瓶6入</h4>
+                    <p>
+                      <u>$17340</u>
+                      平均<span>662</span>/入
+                    </p>
+                  </a>
+                </div>
+                <div class="setList">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559282" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/prod/JC_500x500_04.jpg" class="pic">
+                    </b>
+                    <h3>不老紅霜★密集抗老</h3>
+                    <h4>到手23折↘不老神霜抗老安瓶6入</h4>
+                    <p>
+                      <u>$17340</u>
+                      平均<span>662</span>/入
+                    </p>
+                  </a>
+                </div>
+                <div class="setList" id="JC2a">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559286" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/prod/JC_500x500_05.jpg" class="pic">
+                    </b>
+                    <h3>逆齡抗老★爆水保濕</h3>
+                    <h4>到手26折↘不老神霜微晶保濕6入</h4>
+                    <p>
+                      <u>$15000</u>
+                    平均<span>650</span>/入
+                    </p>
+                  </a>
+                </div>
+                <div class="setList">
+                  <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559290" target="_blank">
+                    <b class="lineMoney30">
+                      <img src="assets/img_main/prod/JC_500x500_06.jpg" class="pic">
+                    </b>
+                    <h3>不老神霜★緊緻超導</h3>
+                    <h4>到手25折↘不老神霜紅導6入</h4>
+                    <p>
+                      <u>$14340</u>
+                    平均<span>592</span>/入
+                    </p>
+                  </a>
+                </div>
               </div>
             </div>
+            <!--yellowLine-->
+          </div>
+          <!--lineWrap-->
 
+          <h1 class="sectionTitle signle" id="JC3" data-aos="zoom-in">
+            <span class="small">
+              <img src="assets/img_main/prod/title_jc_1.png" alt="金盞花SPA面膜" class="pcBlock">
+              <img src="assets/img_main/prod/title_jc_1_m.png" alt="金盞花SPA面膜" class="mbBlock">
+            </span>
+          </h1>
+          <div class="lineWrap">
             <!--四個一排-->
-            <div class="wrapSet--4--2" id="JC2">
+            <div class="wrapSet--4--2">
               <div class="setList">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559278" target="_blank">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559294" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_03.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_07.jpg" class="pic">
                   </b>
-                  <h3>經典紅霜★美白退黯</h3>
-                  <h4>到手23折↘不老神霜美白安瓶6入</h4>
+                  <h3>抗皺緊緻★舒緩療癒</h3>
+                  <h4>到手31折↘不老神霜金盞花面膜5入</h4>
                   <p>
-                    <u>$17340</u>
-                    平均<span>662</span>/入
+                    <u>$11760</u>
+                    平均<span>718</span>/入
                   </p>
                 </a>
               </div>
               <div class="setList">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559282" target="_blank">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559298" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_04.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_08.jpg" class="pic">
                   </b>
-                  <h3>不老紅霜★密集抗老</h3>
-                  <h4>到手23折↘不老神霜抗老安瓶6入</h4>
+                  <h3>舒緩釋壓★淨白透亮</h3>
+                  <h4>到手24折↘金盞花面膜美白安瓶7入</h4>
                   <p>
-                    <u>$17340</u>
-                    平均<span>662</span>/入
+                    <u>$6720</u>
+                    平均<span>550</span>/入
                   </p>
                 </a>
               </div>
-              <div class="setList" id="JC2a">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559286" target="_blank">
+              <div class="setList" id="JC3a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559302" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_05.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_09.jpg" class="pic">
                   </b>
-                  <h3>逆齡抗老★爆水保濕</h3>
-                  <h4>到手26折↘不老神霜微晶保濕6入</h4>
+                  <h3>舒緩釋壓★淨白透亮</h3>
+                  <h4>到手24折↘金盞花面膜美白安瓶7入</h4>
                   <p>
-                    <u>$15000</u>
-                   平均<span>650</span>/入
+                    <u>$16960</u>
+                    平均<span>565</span>/入
                   </p>
                 </a>
               </div>
               <div class="setList">
-                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559290" target="_blank">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559306" target="_blank">
                   <b class="lineMoney30">
-                    <img src="assets/img_main/prod/JC_500x500_06.jpg" class="pic">
+                    <img src="assets/img_main/prod/JC_500x500_10.jpg" class="pic">
                   </b>
-                  <h3>不老神霜★緊緻超導</h3>
-                  <h4>到手25折↘不老神霜紅導6入</h4>
+                  <h3>潤澤乾荒★撫潤乾唇</h3>
+                  <h4>到手33折↘金盞花面膜護唇膏5入</h4>
                   <p>
-                    <u>$14340</u>
-                   平均<span>592</span>/入
+                    <u>$6240</u>
+                    平均<span>667</span>/入
                   </p>
                 </a>
               </div>
             </div>
           </div>
-          <!--yellowLine-->
-        </div>
-        <!--lineWrap-->
+          <!--lineWrap-->
+          <!---->
+          <h1 class="sectionTitle signle" data-aos="zoom-in">
+            <span class="small">
+              <img src="assets/img_main/prod/title_jc_2.png" alt="↘囤貨19折UP" class="pcBlock">
+              <img src="assets/img_main/prod/title_jc_2_m.png" alt="↘囤貨19折UP" class="mbBlock">
+            </span>
+          </h1>
+          <div class="lineWrap">
+            <!--兩個一排-->
+            <div class="wrapSet--2--1" id="JC4">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559310" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_03.jpg" alt="">
+                  </b>
+                </a>
+              </div>
+              <div class="setList" id="JC4a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559314" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_04.jpg" alt="">
+                  </b>
+                </a>
+              </div>
+            </div>
+            <div class="wrapSet--2--1" id="JC5">  
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559318" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_05.jpg" alt="">
+                  </b>
+                </a>
+              </div>
+              <div class="setList" id="JC5a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559322" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/574x226_06.jpg" alt="">
+                  </b>
+                </a>
+              </div>
+            </div>
+            <!--四個一排-->
+            <div class="wrapSet--4--2" id="JC6">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559326" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_15.jpg" class="pic">
+                  </b>
+                <h3>光速美白★肌活緊緻</h3>
+                  <h4>到手2折↘美白抗老安瓶98入</h4>
+                  <p>
+                    <u>$20860</u>
+                    平均<span>41</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559330" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_16.jpg" class="pic">
+                  </b>
+                  <h3>全能抗老★潤澤修護</h3>
+                  <h4>到手25折↘全能乳精華油6入</h4>
+                  <p>
+                    <u>$14400</u>
+                    平均<span>600</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList" id="JC6a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559334" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_17.jpg" class="pic">
+                  </b>
+                  <h3>全能肌彈★美白透亮</h3>
+                  <h4>到手28折↘全能乳美白晶露6入</h4>
+                  <p>
+                    <u>$13200</u>
+                    平均<span>600</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559338" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_18.jpg" class="pic">
+                  </b>
+                  <h3>修護老化★鎖住水份</h3>
+                  <h4>到手27折↘全能乳爆水精華7入</h4>
+                  <p>
+                    <u>$16200</u>
+                    平均<span>609</span>/入
+                  </p>
+                </a>
+              </div>
+            </div>
+              <!-- 分隔線 -->
+            <div class="wrapSet--4--2" id="JC7">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559342" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_19.jpg" class="pic">
+                  </b>
+                  <h3>頂級乳霜★深潤乾肌</h3>
+                  <h4>到手27折↘尊榮霜護唇膏6入</h4>
+                  <p>
+                    <u>$20400</u>
+                    平均<span>1348</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559346" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_20.jpg" class="pic">
+                  </b>
+                  <h3>高效抗老★日夜修護</h3>
+                  <h4>到手29折↘尊榮霜尊榮水6入</h4>
+                  <p>
+                    <u>$19200</u>
+                    平均<span>1078</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList" id="JC7a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559350" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_21.jpg" class="pic">
+                  </b>
+                  <h3>王者之霜★舒緩修護</h3>
+                  <h4>到手31折↘尊榮霜金盞花5入</h4>
+                  <p>
+                    <u>$17760</u>
+                    平均<span>1078</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559354" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_22.jpg" class="pic">
+                  </b>
+                  <h3>喚醒肌膚★修護青春</h3>
+                  <h4>到手3折↘尊榮水金盞花5入</h4>
+                  <p>
+                    <u>$10560</u>
+                    平均<span>620</span>/入
+                  </p>
+                </a>
+              </div>
+            </div>
+              <!-- 分隔線 -->
+          <div class="wrapSet--4--2" id="JC8">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559358" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_23.jpg" class="pic">
+                  </b>
+                  <h3>冬天抗躁★潤彈撫紋</h3>
+                  <h4>到手27折↘液態乳霜5入</h4>
+                  <p>
+                    <u>$12000</u>
+                    平均<span>640</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559362" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_24.jpg" class="pic">
+                  </b>
+                  <h3>抗老神霜★淨白透亮</h3>
+                  <h4>到手27折↘不老神霜美白晶露6入</h4>
+                  <p>
+                    <u>$13800</u>
+                    平均<span>617</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList" id="JC8a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559366" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_25.jpg" class="pic">
+                  </b>
+                  <h3>肌膚白皙★深潤乾肌</h3>
+                  <h4>到手3折↘液態乳霜美白晶露5入</h4>
+                  <p>
+                    <u>$10200</u>
+                    平均<span>598</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559370" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_26.jpg" class="pic">
+                  </b>
+                  <h3>爆水精華★24h鎖水</h3>
+                  <h4>到手29折↘微晶爆水精華4入</h4>
+                  <p>
+                    <u>$8800</u>
+                    平均<span>625</span>/入
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--lineWrap-->
 
-        <h1 class="sectionTitle signle" id="JC3">
-          <span class="small">
-            <img src="assets/img_main/prod/title_jc_1.png" alt="金盞花SPA面膜" class="pcBlock">
-            <img src="assets/img_main/prod/title_jc_1_m.png" alt="金盞花SPA面膜" class="mbBlock">
-          </span>
-        </h1>
-        <div class="lineWrap">
-          <!--四個一排-->
-          <div class="wrapSet--4--2">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559294" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_07.jpg" class="pic">
-                </b>
-                <h3>抗皺緊緻★舒緩療癒</h3>
-                <h4>到手31折↘不老神霜金盞花面膜5入</h4>
-                <p>
-                  <u>$11760</u>
-                  平均<span>718</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559298" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_08.jpg" class="pic">
-                </b>
-                <h3>舒緩釋壓★淨白透亮</h3>
-                <h4>到手24折↘金盞花面膜美白安瓶7入</h4>
-                <p>
-                  <u>$6720</u>
-                  平均<span>550</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC3a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559302" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_09.jpg" class="pic">
-                </b>
-                <h3>舒緩釋壓★淨白透亮</h3>
-                <h4>到手24折↘金盞花面膜美白安瓶7入</h4>
-                <p>
-                  <u>$16960</u>
-                  平均<span>565</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559306" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_10.jpg" class="pic">
-                </b>
-                <h3>潤澤乾荒★撫潤乾唇</h3>
-                <h4>到手33折↘金盞花面膜護唇膏5入</h4>
-                <p>
-                  <u>$6240</u>
-                  平均<span>667</span>/入
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--lineWrap-->
-        <!---->
-        <h1 class="sectionTitle signle">
-          <span class="small">
-            <img src="assets/img_main/prod/title_jc_2.png" alt="↘囤貨19折UP" class="pcBlock">
-            <img src="assets/img_main/prod/title_jc_2_m.png" alt="↘囤貨19折UP" class="mbBlock">
-          </span>
-        </h1>
-        <div class="lineWrap">
+          <h1 class="sectionTitle signle" data-aos="zoom-in">
+            <span class="small">
+              <img src="assets/img_main/prod/title_jc_3.png" alt="京城之霜全系列自由選" class="pcBlock">
+              <img src="assets/img_main/prod/title_jc_3_m.png" alt="京城之霜全系列自由選" class="mbBlock">
+            </span>
+          </h1>
+          <div class="lineWrap">
           <!--兩個一排-->
-          <div class="wrapSet--2--1" id="JC4">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559310" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/574x226_03.jpg" alt="">
-                </b>
-              </a>
+            <div class="wrapSet--2--1" id="JC9">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#JCP" target="_blank">
+                  <img src="assets/img_main/prod/jc_banner_1.jpg" alt="">
+                </a>
+              </div>
+              <div class="setList" id="JC9a">
+                <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=574" target="_blank">
+                  <img src="assets/img_main/prod/jc_banner_2.jpg" alt="">
+                </a>
+              </div>
             </div>
-            <div class="setList" id="JC4a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559314" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/574x226_04.jpg" alt="">
-                </b>
-              </a>
-            </div>
-          </div>
-          <div class="wrapSet--2--1" id="JC5">  
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559318" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/574x226_05.jpg" alt="">
-                </b>
-              </a>
-            </div>
-            <div class="setList" id="JC5a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559322" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/574x226_06.jpg" alt="">
-                </b>
-              </a>
+            <div class="wrapSet--2--1" id="JC10">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=797" target="_blank">
+                  <img src="assets/img_main/prod/jc_banner_3.jpg" alt="">
+                </a>
+              </div>
+              <div class="setList" id="JC10a">
+                <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=544" target="_blank">
+                  <img src="assets/img_main/prod/jc_banner_4.jpg" alt="">
+                </a>
+              </div>
             </div>
           </div>
-          <!--四個一排-->
-          <div class="wrapSet--4--2" id="JC6">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559326" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_15.jpg" class="pic">
-                </b>
-               <h3>光速美白★肌活緊緻</h3>
-                <h4>到手2折↘美白抗老安瓶98入</h4>
-                <p>
-                  <u>$20860</u>
-                  平均<span>41</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559330" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_16.jpg" class="pic">
-                </b>
-                <h3>全能抗老★潤澤修護</h3>
-                <h4>到手25折↘全能乳精華油6入</h4>
-                <p>
-                  <u>$14400</u>
-                  平均<span>600</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC6a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559334" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_17.jpg" class="pic">
-                </b>
-                <h3>全能肌彈★美白透亮</h3>
-                <h4>到手28折↘全能乳美白晶露6入</h4>
-                <p>
-                  <u>$13200</u>
-                  平均<span>600</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559338" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_18.jpg" class="pic">
-                </b>
-                <h3>修護老化★鎖住水份</h3>
-                <h4>到手27折↘全能乳爆水精華7入</h4>
-                <p>
-                  <u>$16200</u>
-                  平均<span>609</span>/入
-                </p>
-              </a>
-            </div>
-          </div>
-             <!-- 分隔線 -->
-          <div class="wrapSet--4--2" id="JC7">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559342" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_19.jpg" class="pic">
-                </b>
-                <h3>頂級乳霜★深潤乾肌</h3>
-                <h4>到手27折↘尊榮霜護唇膏6入</h4>
-                <p>
-                  <u>$20400</u>
-                  平均<span>1348</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559346" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_20.jpg" class="pic">
-                </b>
-                <h3>高效抗老★日夜修護</h3>
-                <h4>到手29折↘尊榮霜尊榮水6入</h4>
-                <p>
-                  <u>$19200</u>
-                  平均<span>1078</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC7a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559350" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_21.jpg" class="pic">
-                </b>
-                <h3>王者之霜★舒緩修護</h3>
-                <h4>到手31折↘尊榮霜金盞花5入</h4>
-                <p>
-                  <u>$17760</u>
-                  平均<span>1078</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559354" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_22.jpg" class="pic">
-                </b>
-                <h3>喚醒肌膚★修護青春</h3>
-                <h4>到手3折↘尊榮水金盞花5入</h4>
-                <p>
-                  <u>$10560</u>
-                  平均<span>620</span>/入
-                </p>
-              </a>
-            </div>
-          </div>
-            <!-- 分隔線 -->
-         <div class="wrapSet--4--2" id="JC8">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559358" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_23.jpg" class="pic">
-                </b>
-                <h3>冬天抗躁★潤彈撫紋</h3>
-                <h4>到手27折↘液態乳霜5入</h4>
-                <p>
-                  <u>$12000</u>
-                  平均<span>640</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559362" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_24.jpg" class="pic">
-                </b>
-                <h3>抗老神霜★淨白透亮</h3>
-                <h4>到手27折↘不老神霜美白晶露6入</h4>
-                <p>
-                  <u>$13800</u>
-                  平均<span>617</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC8a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559366" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_25.jpg" class="pic">
-                </b>
-                <h3>肌膚白皙★深潤乾肌</h3>
-                <h4>到手3折↘液態乳霜美白晶露5入</h4>
-                <p>
-                  <u>$10200</u>
-                  平均<span>598</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559370" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_26.jpg" class="pic">
-                </b>
-                <h3>爆水精華★24h鎖水</h3>
-                <h4>到手29折↘微晶爆水精華4入</h4>
-                <p>
-                  <u>$8800</u>
-                  平均<span>625</span>/入
-                </p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--lineWrap-->
+          <!--lineWrap-->
 
-        <h1 class="sectionTitle signle">
-          <span class="small">
-            <img src="assets/img_main/prod/title_jc_3.png" alt="京城之霜全系列自由選" class="pcBlock">
-            <img src="assets/img_main/prod/title_jc_3_m.png" alt="京城之霜全系列自由選" class="mbBlock">
-          </span>
-        </h1>
-        <div class="lineWrap">
-         <!--兩個一排-->
-          <div class="wrapSet--2--1" id="JC9">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/act/0526-newdetails/index.html#JCP" target="_blank">
-                <img src="assets/img_main/prod/jc_banner_1.jpg" alt="">
-              </a>
+          <h1 class="sectionTitle signle" data-aos="zoom-in">
+            <span class="small">
+              <img src="assets/img_main/prod/title_jc_4.png" alt="破盤↘18折up" class="pcBlock">
+              <img src="assets/img_main/prod/title_jc_4_m.png" alt="破盤↘18折up" class="mbBlock">
+            </span>
+          </h1>
+          <div class="lineWrap">
+            <div class="wrapSet--4--2" id="JC11">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559238" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_27.jpg" class="pic">
+                  </b>
+                  <h3>酒粕精華★調理膚況</h3>
+                  <h4>到手22折↘酵母青春露5入</h4>
+                  <p>
+                    <u>$12000</u>
+                    平均<span>526</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559242" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_28.jpg" class="pic">
+                  </b>
+                  <h3>V型緊緻重現好顏值</h3>
+                  <h4>到手18折↘五爪膨皮4入</h4>
+                  <p>
+                    <u>$14300</u>
+                    平均<span>610</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList" id="JC11a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559246" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_29.jpg" class="pic">
+                  </b>
+                  <h3>超潤質地★揮別乾肌</h3>
+                  <h4>到手28折↘萬用神油3入</h4>
+                  <p>
+                    <u>$7200</u>
+                    平均<span>664</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559250" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_30.jpg" class="pic">
+                  </b>
+                  <h3>一天一顆★新生肌彈亮</h3>
+                  <h4>到手22折↘膠囊護唇膏5入</h4>
+                  <p>
+                    <u>$10200</u>
+                    平均<span>19</span>/顆
+                  </p>
+                </a>
+              </div>
             </div>
-            <div class="setList" id="JC9a">
-              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=574" target="_blank">
-                <img src="assets/img_main/prod/jc_banner_2.jpg" alt="">
-              </a>
+              <!-- 分隔線 -->
+            <div class="wrapSet--4--2" id="JC12">
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559254" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_31.jpg" class="pic">
+                  </b>
+                  <h3>肌膚白皙★光透肌</h3>
+                  <h4>到手28折↘美白晶露5入</h4>
+                  <p>
+                    <u>$9000</u>
+                    平均<span>504</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559258" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_32.jpg" class="pic">
+                  </b>
+                  <h3>抗皺活膚★超導緊實</h3>
+                  <h4>到手22折↘抗皺超導4入</h4>
+                  <p>
+                    <u>$7920</u>
+                    平均<span>435</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList" id="JC12a">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559262" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_33.jpg" class="pic">
+                  </b>
+                  <h3>眼眶緊緻★抹去疲態</h3>
+                  <h4>到手25折↘眼眶霜4入</h4>
+                  <p>
+                    <u>$8000</u>
+                    平均<span>499</span>/入
+                  </p>
+                </a>
+              </div>
+              <div class="setList">
+                <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559266" target="_blank">
+                  <b class="lineMoney30">
+                    <img src="assets/img_main/prod/JC_500x500_34.jpg" class="pic">
+                  </b>
+                  <h3>眼眶減齡★全效抗皺</h3>
+                  <h4>到手18折↘眼周精華4入</h4>
+                  <p>
+                    <u>$9600</u>
+                    平均<span>410</span>/入
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="wrapSet--2--1" id="JC10">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=797" target="_blank">
-                <img src="assets/img_main/prod/jc_banner_3.jpg" alt="">
-              </a>
-            </div>
-            <div class="setList" id="JC10a">
-              <a href="https://www.naruko.com.tw/shop/category/index.php?cat_id=544" target="_blank">
-                <img src="assets/img_main/prod/jc_banner_4.jpg" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--lineWrap-->
+          <!--lineWrap-->
 
-         <h1 class="sectionTitle signle">
-          <span class="small">
-            <img src="assets/img_main/prod/title_jc_4.png" alt="破盤↘18折up" class="pcBlock">
-            <img src="assets/img_main/prod/title_jc_4_m.png" alt="破盤↘18折up" class="mbBlock">
-          </span>
-        </h1>
-        <div class="lineWrap">
-          <div class="wrapSet--4--2" id="JC11">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559238" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_27.jpg" class="pic">
-                </b>
-                <h3>酒粕精華★調理膚況</h3>
-                <h4>到手22折↘酵母青春露5入</h4>
-                <p>
-                  <u>$12000</u>
-                  平均<span>526</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559242" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_28.jpg" class="pic">
-                </b>
-                <h3>V型緊緻重現好顏值</h3>
-                <h4>到手18折↘五爪膨皮4入</h4>
-                <p>
-                  <u>$14300</u>
-                  平均<span>610</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC11a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559246" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_29.jpg" class="pic">
-                </b>
-                <h3>超潤質地★揮別乾肌</h3>
-                <h4>到手28折↘萬用神油3入</h4>
-                <p>
-                  <u>$7200</u>
-                  平均<span>664</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559250" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_30.jpg" class="pic">
-                </b>
-                <h3>一天一顆★新生肌彈亮</h3>
-                <h4>到手22折↘膠囊護唇膏5入</h4>
-                <p>
-                  <u>$10200</u>
-                  平均<span>19</span>/顆
-                </p>
-              </a>
-            </div>
-          </div>
-            <!-- 分隔線 -->
-           <div class="wrapSet--4--2" id="JC12">
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559254" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_31.jpg" class="pic">
-                </b>
-                <h3>肌膚白皙★光透肌</h3>
-                <h4>到手28折↘美白晶露5入</h4>
-                <p>
-                  <u>$9000</u>
-                  平均<span>504</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559258" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_32.jpg" class="pic">
-                </b>
-                <h3>抗皺活膚★超導緊實</h3>
-                <h4>到手22折↘抗皺超導4入</h4>
-                <p>
-                  <u>$7920</u>
-                  平均<span>435</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList" id="JC12a">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559262" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_33.jpg" class="pic">
-                </b>
-                <h3>眼眶緊緻★抹去疲態</h3>
-                <h4>到手25折↘眼眶霜4入</h4>
-                <p>
-                  <u>$8000</u>
-                  平均<span>499</span>/入
-                </p>
-              </a>
-            </div>
-            <div class="setList">
-              <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559266" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/prod/JC_500x500_34.jpg" class="pic">
-                </b>
-                <h3>眼眶減齡★全效抗皺</h3>
-                <h4>到手18折↘眼周精華4入</h4>
-                <p>
-                  <u>$9600</u>
-                  平均<span>410</span>/入
-                </p>
-              </a>
-            </div>
-          </div>
         </div>
-        <!--lineWrap-->
-
-      </div>
-    </section>
+      </section>
     </div>  
 
 
     <!-- NARUKO專區 -->
-    <section id="NA" class="brandSection brandNa js-PC js-navlight_content">
+    <section id="NA" class="brandSection brandNa js-PC js-navlight_content" data-aos="fade-up">
       <div class="container-1200">
         <!-- 橫幅 -->
         <div class="salebanner">
@@ -1600,7 +1655,7 @@
         </div>
         <!--lineWrap-->
 
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_na_1.png" alt="年度最低價 $150∕入up" class="pcBlock">
             <img src="assets/img_main/prod/title_na_1_m.png" alt="年度最低價 $150∕入up" class="mbBlock">
@@ -1627,7 +1682,7 @@
         <!--lineWrap-->
 
          <!---->
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_na_2.png" alt="抗痘美白自由選" class="pcBlock">
             <img src="assets/img_main/prod/title_na_2_m.png" alt="抗痘美白自由選" class="mbBlock">
@@ -1650,7 +1705,7 @@
         <!--lineWrap-->
 
 
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_na_3.png" alt="面膜囤貨專區 ↘3折UP" class="pcBlock">
             <img src="assets/img_main/prod/title_na_3_m.png" alt="面膜囤貨專區 ↘3折UP" class="mbBlock">
@@ -1666,7 +1721,7 @@
                 </b>
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="NA6a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559494" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/NA_574x226_06.jpg" alt="">
@@ -1750,7 +1805,7 @@
           </div>
         </div>
         <!--lineWrap-->
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_t_4.png" alt="水仙奇蹟修護專區 ↘首降43折up" class="pcBlock">
             <img src="assets/img_main/prod/title_t_4_m.png" alt="水仙奇蹟修護專區 ↘首降43折up" class="mbBlock">
@@ -1814,7 +1869,7 @@
         </div>
         <!--lineWrap-->
 
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_na_5.png" alt="洗卸保養專區 ↘45折UP" class="pcBlock">
             <img src="assets/img_main/prod/title_na_5_m.png" alt="洗卸保養專區 ↘45折UP" class="mbBlock">
@@ -2002,14 +2057,12 @@
     </section>
 
     <!--ampm專區-->
-    <section id="AP" class="brandSection brandAp js-PC js-navlight_content">
+    <section id="AP" class="brandSection brandAp js-PC js-navlight_content" data-aos="fade-up">
       <div class="container-1200">
         <!-- 橫幅 -->
         <div class="salebanner">
-          <a href="#" target="_blank">
-            <img src="assets/img_main/prod/salebanner-ap.png" alt="重建弱敏肌膚屏障  囤貨$208/入UP" class="pcBlock">
-            <img src="assets/img_main/prod/salebanner-ap_m.jpg" alt="重建弱敏肌膚屏障  囤貨$208/入UP" class="mbBlock">
-          </a>
+          <img src="assets/img_main/prod/salebanner-ap.png" alt="重建弱敏肌膚屏障  囤貨$208/入UP" class="pcBlock">
+          <img src="assets/img_main/prod/salebanner-ap_m.jpg" alt="重建弱敏肌膚屏障  囤貨$208/入UP" class="mbBlock">
         </div>
 
         <div class="lineWrap">
@@ -2160,7 +2213,7 @@
         </div>
         </div><!--lineWrap-->
 
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_ap_1.png" alt="醫美速效保養 ↘25折up" class="pcBlock"> 
             <img src="assets/img_main/prod/title_ap_1_m.png" alt="醫美速效保養 ↘25折up" class="mbBlock">
@@ -2231,7 +2284,7 @@
         </div><!--lineWrap-->
 
 
-        <h1 class="sectionTitle signle">
+        <h1 class="sectionTitle signle" data-aos="zoom-in">
           <span class="small">
             <img src="assets/img_main/prod/title_ap_2.png" alt="回購NO.1 明星卡司 ↘2件$511up" class="pcBlock"> 
             <img src="assets/img_main/prod/title_ap_2_m.png" alt="回購NO.1 明星卡司 ↘2件$511up" class="mbBlock">
@@ -2239,27 +2292,22 @@
         </h1>
 
         <div class="lineWrap">
-		     <!--兩個一排-->
-          <!-- <div class="wrapSet--2--1" id="AP5">
-            <div class="setList">
+          <!--兩個一排-->
+          <div class="wrapSet--2--1">
+            <div class="setList" id="AP7">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559606" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/AP_574x226_07.jpg" alt="">
-                </b>
+                <img src="assets/img_main/AP_574x226_07.jpg" alt="">
               </a>
             </div>
-            <div class="setList">
+            <div class="setList" id="AP7a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559610" target="_blank">
-                <b class="lineMoney30">
-                  <img src="assets/img_main/AP_574x226_08.jpg" alt="">
-                </b>
+                <img src="assets/img_main/AP_574x226_08.jpg" alt="">
               </a>
             </div>
-          </div>	 -->
+          </div>	
           <!--四個一排-->
-          <div class="wrapSet--4--2" id="AP7">
-		
-            <div class="setList">
+          <div class="wrapSet--4--2">
+            <div class="setList" id="AP8">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559602" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_20.jpg" class="pic">
@@ -2285,7 +2333,7 @@
                 </p>
               </a>
             </div>
-            <div class="setList" id="AP7a">
+            <div class="setList" id="AP8a">
               <a href="https://www.naruko.com.tw/shop/product/index.php?pid=99559594" target="_blank">
                 <b class="lineMoney30">
                   <img src="assets/img_main/prod/AP_500x500_22.jpg" class="pic">
@@ -2326,12 +2374,21 @@
 
   </div><!-- WRAPPER END -->
 
-
+  <!--sctipt start-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    $(function(){
+      AOS.init({
+        offset: 120,
+        easing: 'ease-out-back',
+        duration: 800
+      });
+    });
+  </script> 
   <!--Phone-選單套件-->
   <script language="javascript" type="text/javascript" src="assets/js/navlight.js"></script>
   <script language="javascript" type="text/javascript" src="assets/js/navlight_main.js"></script>
   <script language="javascript" type="text/javascript" src='assets/js/main.js'></script>
-  <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>-->
 
   <script type="text/javascript">
     var spDone1 = true;

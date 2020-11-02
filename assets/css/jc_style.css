@@ -2254,8 +2254,8 @@ section .setList b {
 section .setList b::before {
   content: "";
   display: block;
-  width: 80px;
-  height: 29px;
+  width: 90px;
+  height: 30px;
   position: absolute;
   left: 1.1%;
   top: 10%;
@@ -2266,6 +2266,34 @@ section .setList b::before {
 
 section .setList b.lineMoney30::before {
   background-image: url(../image/LINE-PAY_30.png);
+}
+
+#TOP3 .setList b::before {
+  top: 13%;
+}
+
+#TOP1 .setList b::before {
+  top: 17%;
+}
+
+.wrapSet--2--1 .setList b {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.wrapSet--2--1 .setList b::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 1.1%;
+  top: 7%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body {
